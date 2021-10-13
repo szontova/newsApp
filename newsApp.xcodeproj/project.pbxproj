@@ -66,6 +66,7 @@
 		CE649FDA27159B8500774BE9 = {
 			isa = PBXGroup;
 			children = (
+				CE64A0012715A31400774BE9 /* .swiftlint.yml */,
 				CE649FE527159B8500774BE9 /* newsApp */,
 				CE649FE427159B8500774BE9 /* Products */,
 				3B58D19BEE1BAA274D779363 /* Pods */,
@@ -84,7 +85,6 @@
 		CE649FE527159B8500774BE9 /* newsApp */ = {
 			isa = PBXGroup;
 			children = (
-				CE64A0012715A31400774BE9 /* .swiftlint.yml */,
 				CE649FF727159B8500774BE9 /* Info.plist */,
 				CE649FEA27159B8500774BE9 /* ViewController.swift */,
 				CE649FFD27159E6800774BE9 /* Application */,
