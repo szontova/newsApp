@@ -6,6 +6,11 @@ target 'newsApp' do
   use_frameworks!
 
   # Pods for newsApp
+  pod 'Alamofire', '5.4.4'
+
+  pod 'lottie-ios', '3.2.3'
+
+  pod 'SnapKit', '5.0.1'
 
   pod 'SwiftLint', '0.44.0'
 
