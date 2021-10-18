@@ -86,11 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				CE649FF727159B8500774BE9 /* Info.plist */,
-				CE649FEA27159B8500774BE9 /* ViewController.swift */,
 				CE649FFD27159E6800774BE9 /* Application */,
 				CE649FFE27159E9500774BE9 /* CoreData */,
-				CE649FF427159B8500774BE9 /* LaunchScreen.storyboard */,
-				CE649FEC27159B8500774BE9 /* Main.storyboard */,
+				CE901A0F271D495C00DEC766 /* Modules */,
 				CE649FFF27159EA800774BE9 /* Resources */,
 			);
 			path = newsApp;
@@ -119,6 +117,24 @@
 				CE649FF227159B8500774BE9 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE901A0F271D495C00DEC766 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CE649FF427159B8500774BE9 /* LaunchScreen.storyboard */,
+				CE901A10271D4A0200DEC766 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CE901A10271D4A0200DEC766 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CE649FEC27159B8500774BE9 /* Main.storyboard */,
+				CE649FEA27159B8500774BE9 /* ViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
