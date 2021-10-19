@@ -21,6 +21,8 @@
 		CEA87C6D271ED50200564DC8 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C6C271ED50200564DC8 /* SignIn.storyboard */; };
 		CEA87C72271EE55700564DC8 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C71271EE55700564DC8 /* SignInViewModel.swift */; };
 		CEA87C75271EFD5E00564DC8 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C74271EFD5E00564DC8 /* SignInModel.swift */; };
+		CEA87C7C271F496800564DC8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C7B271F496800564DC8 /* Home.storyboard */; };
+		CEA87C7E271F4B6200564DC8 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C7D271F4B6200564DC8 /* HomeController.swift */; };
 		D8F2C0B1FB8898D4ED41C2E5 /* Pods_newsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49D11100318ABCDFB183840 /* Pods_newsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		CEA87C6C271ED50200564DC8 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		CEA87C71271EE55700564DC8 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		CEA87C74271EFD5E00564DC8 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		CEA87C7B271F496800564DC8 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		CEA87C7D271F4B6200564DC8 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 		CE901A0F271D495C00DEC766 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CEA87C7A271F480100564DC8 /* Home */,
 				CE649FF427159B8500774BE9 /* LaunchScreen.storyboard */,
 				CE901A10271D4A0200DEC766 /* Main */,
 				CEA87C69271ED49400564DC8 /* SignIn */,
@@ -185,6 +190,15 @@
 				CEA87C74271EFD5E00564DC8 /* SignInModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CEA87C7A271F480100564DC8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CEA87C7B271F496800564DC8 /* Home.storyboard */,
+				CEA87C7D271F4B6200564DC8 /* HomeController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +268,7 @@
 				CEA87C68271ED16A00564DC8 /* Dosis-Regular.ttf in Resources */,
 				CEA87C6D271ED50200564DC8 /* SignIn.storyboard in Resources */,
 				CEA87C5E271EC36400564DC8 /* loading.json in Resources */,
+				CEA87C7C271F496800564DC8 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +342,7 @@
 				CEA87C72271EE55700564DC8 /* SignInViewModel.swift in Sources */,
 				CE649FE727159B8500774BE9 /* AppDelegate.swift in Sources */,
 				CEA87C75271EFD5E00564DC8 /* SignInModel.swift in Sources */,
+				CEA87C7E271F4B6200564DC8 /* HomeController.swift in Sources */,
 				CE649FF127159B8500774BE9 /* newsApp.xcdatamodeld in Sources */,
 				CEA87C6B271ED4F700564DC8 /* SignInViewController.swift in Sources */,
 				CE649FE927159B8500774BE9 /* SceneDelegate.swift in Sources */,

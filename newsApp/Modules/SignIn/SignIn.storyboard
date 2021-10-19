@@ -19,10 +19,23 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="Wdg-gK-5Uu" kind="show" identifier="toHomeSegue" id="dRN-jp-6Sy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="100"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="8m1-WL-6Qb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="Wdg-gK-5Uu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XWC-Nu-Bfv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xfe-gX-cGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="100"/>
         </scene>
     </scenes>
     <resources>
