@@ -6,6 +6,7 @@
 //
 
 import Lottie
+import SGCodeTextField
 import UIKit
 
 class SignInViewController: UIViewController {
@@ -13,7 +14,7 @@ class SignInViewController: UIViewController {
     private var signInViewModel: SignInViewModel!
     private let titleLabel = UILabel()
     private let errorLabel = UILabel()
-    private let codeTextField = UITextField()
+    private let codeTextField = SGCodeTextField()
     private let signInButton = UIButton(type: .system)
     private let loadingView = UIView()
     private let animationView = AnimationView()
@@ -52,19 +53,38 @@ class SignInViewController: UIViewController {
     }
     
     private func createCodeTextField() {
+        let colors = [#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), #colorLiteral(red: 0.8078431487, green: 0.3853882797, blue: 0.4252633374, alpha: 1)]
         view.addSubview(codeTextField)
+        codeTextField.textColor = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
+        codeTextField.digitBackgroundColorEmpty = .clear
+        codeTextField.digitBackgroundColor = .clear
+        codeTextField.digitBorderColorFocused = colors.randomElement()!
+        codeTextField.placeholder = ""
+        codeTextField.digitBorderColor = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
+        codeTextField.digitBackgroundColorFocused = .clear
+        codeTextField.digitSpacing = 20
+        codeTextField.textColorFocused = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
+        codeTextField.keyboardType = .numberPad
+        codeTextField.count = 6
+        codeTextField.font = UIFont(name: "Dosis-Regular", size: 20)!
+        
+        codeTextField.textChangeHandler = { text, _ in
+            self.codeTextField.digitBorderColorFocused = colors.randomElement()!
+            if text?.count == 6 {
+                self.signInButton.isUserInteractionEnabled = true
+                self.signInButton.alpha = 1.0
+            } else {
+                self.signInButton.isUserInteractionEnabled = false
+                self.signInButton.alpha = 0.5
+            }
+        }
+        
         codeTextField.snp.makeConstraints { maker in
-            maker.width.equalTo(view.bounds.width * 0.8)
-            maker.height.equalTo(view.bounds.width * 0.1)
+            maker.width.equalTo(view.bounds.width * 0.9)
+            maker.height.equalTo(view.bounds.width * 0.15)
             maker.centerX.equalToSuperview()
             maker.top.equalTo(titleLabel).inset(view.bounds.width * 0.2)
         }
-        codeTextField.textColor = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
-        codeTextField.backgroundColor = .clear
-        codeTextField.layer.borderWidth = 1
-        codeTextField.layer.borderColor = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
-        codeTextField.delegate = self
-        codeTextField.font = UIFont(name: "Dosis-Regular", size: 20)
     }
     
     private func createSignInButton() {
@@ -150,20 +170,5 @@ class SignInViewController: UIViewController {
         UIView.transition(with: view, duration: 0.4, options: .transitionCrossDissolve, animations: {
             self.createLoadingView()
         })
-    }
-}
-
-extension SignInViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let text = (textField.text! as NSString).replacingCharacters(in: range, with: string)
-        
-        if text.count == 6 {
-            signInButton.isUserInteractionEnabled = true
-            signInButton.alpha = 1.0
-        } else {
-            signInButton.isUserInteractionEnabled = false
-            signInButton.alpha = 0.5
-        }
-        return true
     }
 }
