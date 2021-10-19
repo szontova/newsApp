@@ -16,6 +16,7 @@
 		CE649FF627159B8500774BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE649FF427159B8500774BE9 /* LaunchScreen.storyboard */; };
 		CE64A0022715A31400774BE9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CE64A0012715A31400774BE9 /* .swiftlint.yml */; };
 		CEA87C5E271EC36400564DC8 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C5D271EC36400564DC8 /* loading.json */; };
+		CEA87C68271ED16A00564DC8 /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C67271ED16700564DC8 /* Dosis-Regular.ttf */; };
 		D8F2C0B1FB8898D4ED41C2E5 /* Pods_newsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49D11100318ABCDFB183840 /* Pods_newsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +35,7 @@
 		CE649FF727159B8500774BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE64A0012715A31400774BE9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		CEA87C5D271EC36400564DC8 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
-		CEA87C61271ECC1300564DC8 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		CEA87C67271ED16700564DC8 /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +154,7 @@
 		CEA87C5F271ECA8E00564DC8 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				CEA87C61271ECC1300564DC8 /* Poppins-Light.ttf */,
+				CEA87C67271ED16700564DC8 /* Dosis-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -222,6 +223,7 @@
 				CE649FF627159B8500774BE9 /* LaunchScreen.storyboard in Resources */,
 				CE649FF327159B8500774BE9 /* Assets.xcassets in Resources */,
 				CE649FEE27159B8500774BE9 /* Main.storyboard in Resources */,
+				CEA87C68271ED16A00564DC8 /* Dosis-Regular.ttf in Resources */,
 				CEA87C5E271EC36400564DC8 /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.01412864786, green: 0, blue: 0.04351914807, alpha: 1)
-        setupAnimationView()
+        createAnimationView()
     }
     
-    private func setupAnimationView() {
+    private func createAnimationView() {
         view.addSubview(animationView)
         animationView.animation = Animation.named("loading")
         animationView.contentMode = .scaleAspectFit
@@ -28,8 +28,8 @@ class ViewController: UIViewController {
         }
         
         animationView.snp.makeConstraints { maker in
-            maker.height.equalTo(view.bounds.height * 0.6)
-            maker.width.equalTo(view.bounds.height * 0.6)
+            maker.height.equalTo(view.bounds.height * 0.7)
+            maker.width.equalTo(view.bounds.height * 0.7)
             maker.centerX.equalToSuperview()
             maker.centerY.equalToSuperview()
         }
