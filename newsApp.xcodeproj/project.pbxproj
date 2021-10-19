@@ -19,6 +19,8 @@
 		CEA87C68271ED16A00564DC8 /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C67271ED16700564DC8 /* Dosis-Regular.ttf */; };
 		CEA87C6B271ED4F700564DC8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C6A271ED4F700564DC8 /* SignInViewController.swift */; };
 		CEA87C6D271ED50200564DC8 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C6C271ED50200564DC8 /* SignIn.storyboard */; };
+		CEA87C72271EE55700564DC8 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C71271EE55700564DC8 /* SignInViewModel.swift */; };
+		CEA87C75271EFD5E00564DC8 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C74271EFD5E00564DC8 /* SignInModel.swift */; };
 		D8F2C0B1FB8898D4ED41C2E5 /* Pods_newsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49D11100318ABCDFB183840 /* Pods_newsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		CEA87C67271ED16700564DC8 /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.ttf"; sourceTree = "<group>"; };
 		CEA87C6A271ED4F700564DC8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CEA87C6C271ED50200564DC8 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		CEA87C71271EE55700564DC8 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		CEA87C74271EFD5E00564DC8 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				CE649FF727159B8500774BE9 /* Info.plist */,
 				CE649FFD27159E6800774BE9 /* Application */,
 				CE649FFE27159E9500774BE9 /* CoreData */,
+				CEA87C73271EFD4300564DC8 /* Models */,
 				CE901A0F271D495C00DEC766 /* Modules */,
 				CE649FFF27159EA800774BE9 /* Resources */,
 			);
@@ -167,10 +172,19 @@
 		CEA87C69271ED49400564DC8 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				CEA87C6A271ED4F700564DC8 /* SignInViewController.swift */,
 				CEA87C6C271ED50200564DC8 /* SignIn.storyboard */,
+				CEA87C6A271ED4F700564DC8 /* SignInViewController.swift */,
+				CEA87C71271EE55700564DC8 /* SignInViewModel.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		CEA87C73271EFD4300564DC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEA87C74271EFD5E00564DC8 /* SignInModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE649FEB27159B8500774BE9 /* ViewController.swift in Sources */,
+				CEA87C72271EE55700564DC8 /* SignInViewModel.swift in Sources */,
 				CE649FE727159B8500774BE9 /* AppDelegate.swift in Sources */,
+				CEA87C75271EFD5E00564DC8 /* SignInModel.swift in Sources */,
 				CE649FF127159B8500774BE9 /* newsApp.xcdatamodeld in Sources */,
 				CEA87C6B271ED4F700564DC8 /* SignInViewController.swift in Sources */,
 				CE649FE927159B8500774BE9 /* SceneDelegate.swift in Sources */,
