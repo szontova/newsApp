@@ -15,6 +15,7 @@
 		CE649FF327159B8500774BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE649FF227159B8500774BE9 /* Assets.xcassets */; };
 		CE649FF627159B8500774BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE649FF427159B8500774BE9 /* LaunchScreen.storyboard */; };
 		CE64A0022715A31400774BE9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CE64A0012715A31400774BE9 /* .swiftlint.yml */; };
+		CEA87C5E271EC36400564DC8 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C5D271EC36400564DC8 /* loading.json */; };
 		D8F2C0B1FB8898D4ED41C2E5 /* Pods_newsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49D11100318ABCDFB183840 /* Pods_newsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		CE649FF527159B8500774BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE649FF727159B8500774BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE64A0012715A31400774BE9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		CEA87C5D271EC36400564DC8 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		CE649FFF27159EA800774BE9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CEA87C56271EC23C00564DC8 /* Animations */,
 				CE649FF227159B8500774BE9 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -135,6 +138,14 @@
 				CE649FEA27159B8500774BE9 /* ViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		CEA87C56271EC23C00564DC8 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				CEA87C5D271EC36400564DC8 /* loading.json */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 				CE649FF627159B8500774BE9 /* LaunchScreen.storyboard in Resources */,
 				CE649FF327159B8500774BE9 /* Assets.xcassets in Resources */,
 				CE649FEE27159B8500774BE9 /* Main.storyboard in Resources */,
+				CEA87C5E271EC36400564DC8 /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
