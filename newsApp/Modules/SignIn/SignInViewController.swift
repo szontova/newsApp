@@ -66,6 +66,7 @@ class SignInViewController: UIViewController {
         codeTextField.backgroundColor = .clear
         codeTextField.layer.borderWidth = 1
         codeTextField.layer.borderColor = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
+        codeTextField.delegate = self
         codeTextField.font = UIFont(name: "Dosis-Regular", size: 20)
     }
     
@@ -83,6 +84,8 @@ class SignInViewController: UIViewController {
         signInButton.layer.cornerRadius = 20
         signInButton.setTitleColor(.white, for: .normal)
         signInButton.titleLabel?.font = UIFont(name: "Dosis-Regular", size: 24)
+        signInButton.isUserInteractionEnabled = false
+        signInButton.alpha = 0.5
         
         signInButton.addTarget(self, action: #selector(tappedSignInButton), for: .touchUpInside)
     }
@@ -146,5 +149,20 @@ class SignInViewController: UIViewController {
         UIView.transition(with: view, duration: 0.4, options: .transitionCrossDissolve, animations: {
             self.createLoadingView()
         })
+    }
+}
+
+extension SignInViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let text = (textField.text! as NSString).replacingCharacters(in: range, with: string)
+        
+        if text.count == 6 {
+            signInButton.isUserInteractionEnabled = true
+            signInButton.alpha = 1.0
+        } else {
+            signInButton.isUserInteractionEnabled = false
+            signInButton.alpha = 0.5
+        }
+        return true
     }
 }
