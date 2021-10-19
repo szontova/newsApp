@@ -34,6 +34,7 @@
 		CE649FF727159B8500774BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE64A0012715A31400774BE9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		CEA87C5D271EC36400564DC8 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		CEA87C61271ECC1300564DC8 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 		CE649FFF27159EA800774BE9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CEA87C5F271ECA8E00564DC8 /* Fonts */,
 				CEA87C56271EC23C00564DC8 /* Animations */,
 				CE649FF227159B8500774BE9 /* Assets.xcassets */,
 			);
@@ -146,6 +148,14 @@
 				CEA87C5D271EC36400564DC8 /* loading.json */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		CEA87C5F271ECA8E00564DC8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CEA87C61271ECC1300564DC8 /* Poppins-Light.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
