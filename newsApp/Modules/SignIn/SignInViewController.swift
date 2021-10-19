@@ -12,10 +12,13 @@ class SignInViewController: UIViewController {
     
     private var signInViewModel: SignInViewModel!
     private let titleLabel = UILabel()
+    private let errorLabel = UILabel()
     private let codeTextField = UITextField()
     private let signInButton = UIButton(type: .system)
     private let loadingView = UIView()
     private let animationView = AnimationView()
+    
+    private var isCorrect = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +32,25 @@ class SignInViewController: UIViewController {
     private func createTitleLabel() {
         view.addSubview(titleLabel)
         titleLabel.text = "Enter your login code"
+        if signInViewModel.user.isEmpty {
+            titleLabel.text = "Write your login code"
+        }
         titleLabel.textColor = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
         titleLabel.font = UIFont(name: "Dosis-Regular", size: 24)
         titleLabel.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
             maker.top.equalTo(view.bounds.height * 0.2)
+        }
+    }
+    
+    private func createErrorLabel() {
+        view.addSubview(errorLabel)
+        errorLabel.text = "Incorrect code"
+        errorLabel.textColor = #colorLiteral(red: 0.8078431487, green: 0.3853882797, blue: 0.4252633374, alpha: 1)
+        errorLabel.font = UIFont(name: "Dosis-Regular", size: 24)
+        errorLabel.snp.makeConstraints { maker in
+            maker.centerX.equalToSuperview()
+            maker.top.equalTo(codeTextField).inset(view.bounds.height * 0.07)
         }
     }
     
@@ -72,7 +89,7 @@ class SignInViewController: UIViewController {
     
     private func createLoadingView() {
         view.addSubview(loadingView)
-        loadingView.backgroundColor = #colorLiteral(red: 0.01412864786, green: 0, blue: 0.04351914807, alpha: 0.5)
+        loadingView.backgroundColor = #colorLiteral(red: 0.01412864786, green: 0, blue: 0.04351914807, alpha: 0.6966977085)
         loadingView.snp.makeConstraints { maker in
             maker.width.equalToSuperview()
             maker.height.equalToSuperview()
@@ -87,8 +104,13 @@ class SignInViewController: UIViewController {
         animationView.loopMode = .playOnce
         animationView.animationSpeed = 0.9
         animationView.play { _ in
-            UIView.transition(with: self.view, duration: 0.4, options: .transitionCrossDissolve, animations: {
+            UIView.transition(with: self.view, duration: 0.3, options: .transitionCrossDissolve, animations: {
                 self.loadingView.removeFromSuperview()
+                if self.isCorrect {
+                    
+                } else {
+                    self.createErrorLabel()
+                }
             })
         }
         
@@ -109,12 +131,18 @@ class SignInViewController: UIViewController {
         return dateFormatter.string(from:currentDate)
     }
     
-    private func getUser() -> String {
-        return ""
+    private func getCode() -> String {
+        if signInViewModel.user.isEmpty {
+            signInViewModel.addUser(code: codeTextField.text ?? "", date: getDate())
+        }
+        return signInViewModel.user[0].code
     }
     
     // MARK: - Actions
     @objc private func tappedSignInButton() {
+        let code = getCode()
+        let inputCode = codeTextField.text ?? ""
+        isCorrect = code == inputCode ? true : false
         UIView.transition(with: view, duration: 0.4, options: .transitionCrossDissolve, animations: {
             self.createLoadingView()
         })
