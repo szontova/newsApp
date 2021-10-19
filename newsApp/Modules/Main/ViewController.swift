@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         animationView.loopMode = .playOnce
         animationView.animationSpeed = 0.9
         animationView.play { _ in
+            self.performSegue(withIdentifier: "toSignInSegue", sender: nil)
         }
         
         animationView.snp.makeConstraints { maker in
