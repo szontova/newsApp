@@ -20,10 +20,11 @@ class SignInViewController: UIViewController {
     private let animationView = AnimationView()
     
     private var isCorrect = false
+    private let colors = [UIColor.lime, .carrot, .richYellow, .rosy]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.01412864786, green: 0, blue: 0.04351914807, alpha: 1)
+        view.backgroundColor = .darkness
         signInViewModel = SignInViewModel()
         createTitleLabel()
         createCodeTextField()
@@ -33,7 +34,7 @@ class SignInViewController: UIViewController {
     private func createTitleLabel() {
         view.addSubview(titleLabel)
         titleLabel.text = "Enter your login code"
-        titleLabel.textColor = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
+        titleLabel.textColor = .freeze
         titleLabel.font = UIFont(name: "Dosis-Regular", size: 24)
         titleLabel.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
@@ -44,7 +45,7 @@ class SignInViewController: UIViewController {
     private func createErrorLabel() {
         view.addSubview(errorLabel)
         errorLabel.text = "Incorrect code"
-        errorLabel.textColor = #colorLiteral(red: 0.8078431487, green: 0.3853882797, blue: 0.4252633374, alpha: 1)
+        errorLabel.textColor = .rosy
         errorLabel.font = UIFont(name: "Dosis-Regular", size: 24)
         errorLabel.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
@@ -53,23 +54,22 @@ class SignInViewController: UIViewController {
     }
     
     private func createCodeTextField() {
-        let colors = [#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), #colorLiteral(red: 0.8078431487, green: 0.3853882797, blue: 0.4252633374, alpha: 1)]
         view.addSubview(codeTextField)
-        codeTextField.textColor = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
+        codeTextField.textColor = .freeze
         codeTextField.digitBackgroundColorEmpty = .clear
         codeTextField.digitBackgroundColor = .clear
         codeTextField.digitBorderColorFocused = colors.randomElement()!
         codeTextField.placeholder = ""
-        codeTextField.digitBorderColor = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
+        codeTextField.digitBorderColor = .freeze
         codeTextField.digitBackgroundColorFocused = .clear
         codeTextField.digitSpacing = 20
-        codeTextField.textColorFocused = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
+        codeTextField.textColorFocused = .freeze
         codeTextField.keyboardType = .numberPad
         codeTextField.count = 6
         codeTextField.font = UIFont(name: "Dosis-Regular", size: 20)!
         
         codeTextField.textChangeHandler = { text, _ in
-            self.codeTextField.digitBorderColorFocused = colors.randomElement()!
+            self.codeTextField.digitBorderColorFocused = self.colors.randomElement()!
             if text?.count == 6 {
                 self.signInButton.isUserInteractionEnabled = true
                 self.signInButton.alpha = 1.0
@@ -88,9 +88,8 @@ class SignInViewController: UIViewController {
     }
     
     private func createSignInButton() {
-        let randomColor = [#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), #colorLiteral(red: 0.8078431487, green: 0.3853882797, blue: 0.4252633374, alpha: 1)].randomElement()
         view.addSubview(signInButton)
-        signInButton.backgroundColor = randomColor
+        signInButton.backgroundColor = colors.randomElement()
         signInButton.setTitle("Sign In", for: .normal)
         if signInViewModel.user.isEmpty {
             titleLabel.text = "Add your login code"
