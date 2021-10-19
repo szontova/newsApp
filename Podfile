@@ -11,6 +11,8 @@ target 'newsApp' do
 
   pod 'lottie-ios', '3.2.3'
 
+  pod 'SGCodeTextField', '0.1.4'
+
   pod 'SnapKit', '5.0.1'
 
   pod 'SwiftLint', '0.44.0'

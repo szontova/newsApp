@@ -32,9 +32,6 @@ class SignInViewController: UIViewController {
     private func createTitleLabel() {
         view.addSubview(titleLabel)
         titleLabel.text = "Enter your login code"
-        if signInViewModel.user.isEmpty {
-            titleLabel.text = "Write your login code"
-        }
         titleLabel.textColor = #colorLiteral(red: 0.9339585077, green: 0.9601209991, blue: 1, alpha: 1)
         titleLabel.font = UIFont(name: "Dosis-Regular", size: 24)
         titleLabel.snp.makeConstraints { maker in
@@ -75,6 +72,10 @@ class SignInViewController: UIViewController {
         view.addSubview(signInButton)
         signInButton.backgroundColor = randomColor
         signInButton.setTitle("Sign In", for: .normal)
+        if signInViewModel.user.isEmpty {
+            titleLabel.text = "Add your login code"
+            signInButton.setTitle("Add", for: .normal)
+        }
         signInButton.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
             maker.width.equalTo(200)
