@@ -23,6 +23,7 @@ class NewsTableViewCell: UITableViewCell {
         createSubLabel()
     }
     
+    // MARK: - Setup
     static var nib: UINib {
         UINib(nibName: String(describing: Self.self), bundle: Bundle.main)
     }

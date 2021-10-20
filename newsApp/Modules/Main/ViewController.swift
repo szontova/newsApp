@@ -12,12 +12,14 @@ import UIKit
 class ViewController: UIViewController {
     private let animationView = AnimationView()
 
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .darkness
         createAnimationView()
     }
     
+    // MARK: - Setup
     private func createAnimationView() {
         view.addSubview(animationView)
         animationView.animation = Animation.named("loading")

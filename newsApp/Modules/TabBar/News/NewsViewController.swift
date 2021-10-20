@@ -14,6 +14,7 @@ class NewsViewController: UIViewController {
     
     private var viewModel: HomeViewModel!
 
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .darkness
@@ -27,6 +28,7 @@ class NewsViewController: UIViewController {
         tableView.reloadData()
     }
     
+    // MARK: - Setup
     private func createTitleLabel() {
         view.addSubview(titleLabel)
         titleLabel.text = "News"

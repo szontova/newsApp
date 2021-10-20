@@ -20,9 +20,7 @@ class SignInViewModel {
     }
     
     func getUser() {
-        guard
-            let data = UserDefaults.standard.data(forKey: "user"),
-            let savedItems = try? JSONDecoder().decode([SignInModel].self, from: data)
+        guard let data = UserDefaults.standard.data(forKey: "user"), let savedItems = try? JSONDecoder().decode([SignInModel].self, from: data)
         else { return }
 
         self.user = savedItems
@@ -34,7 +32,7 @@ class SignInViewModel {
     }
     
     func updateUser(item: SignInModel) {
-//       users[index] = item.updateCompletion()
+       user[0] = item.updateCompletion()
     }
     
     func saveUser() {

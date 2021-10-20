@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
     private let label = UILabel()
     private let animationView = AnimationView()
 
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .darkness
@@ -24,6 +25,7 @@ class ProfileViewController: UIViewController {
         animationView.play()
     }
     
+    // MARK: - Setup
     private func createLabel() {
         view.addSubview(label)
         label.text = "In developing..."

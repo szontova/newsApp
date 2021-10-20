@@ -22,6 +22,7 @@ class SignInViewController: UIViewController {
     private var isCorrect = false
     private let colors = [UIColor.lime, .carrot, .richYellow, .rosy]
 
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .darkness
@@ -31,6 +32,7 @@ class SignInViewController: UIViewController {
         createSignInButton()
     }
     
+    // MARK: - Setup
     private func createTitleLabel() {
         view.addSubview(titleLabel)
         titleLabel.text = "Enter your login code"
@@ -145,6 +147,7 @@ class SignInViewController: UIViewController {
         }
     }
     
+    // MARK: - Logic
     private func getDate() -> String {
         let calendar = Calendar(identifier: .gregorian)
         let currentDate = Date()
