@@ -25,6 +25,9 @@
 		CEA87C7E271F4B6200564DC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C7D271F4B6200564DC8 /* HomeViewController.swift */; };
 		CEA87C82271F4D5400564DC8 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C81271F4D5400564DC8 /* UIViewControllerExtensions.swift */; };
 		CEA87C84271F4FE800564DC8 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C83271F4FE800564DC8 /* UIColorExtensions.swift */; };
+		CEA87C86271FD7B500564DC8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */; };
+		CEA87C88271FD7EF00564DC8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */; };
+		CEA87C8A271FDBB200564DC8 /* christmas-spin.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C89271FDBB200564DC8 /* christmas-spin.json */; };
 		D8F2C0B1FB8898D4ED41C2E5 /* Pods_newsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49D11100318ABCDFB183840 /* Pods_newsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,9 @@
 		CEA87C7D271F4B6200564DC8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CEA87C81271F4D5400564DC8 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		CEA87C83271F4FE800564DC8 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CEA87C89271FDBB200564DC8 /* christmas-spin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "christmas-spin.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA87C5D271EC36400564DC8 /* loading.json */,
+				CEA87C89271FDBB200564DC8 /* christmas-spin.json */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -202,6 +209,8 @@
 			children = (
 				CEA87C7B271F496800564DC8 /* Home.storyboard */,
 				CEA87C7D271F4B6200564DC8 /* HomeViewController.swift */,
+				CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */,
+				CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -291,6 +300,7 @@
 				CEA87C6D271ED50200564DC8 /* SignIn.storyboard in Resources */,
 				CEA87C5E271EC36400564DC8 /* loading.json in Resources */,
 				CEA87C7C271F496800564DC8 /* Home.storyboard in Resources */,
+				CEA87C8A271FDBB200564DC8 /* christmas-spin.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,10 +376,12 @@
 				CEA87C75271EFD5E00564DC8 /* SignInModel.swift in Sources */,
 				CEA87C82271F4D5400564DC8 /* UIViewControllerExtensions.swift in Sources */,
 				CEA87C7E271F4B6200564DC8 /* HomeViewController.swift in Sources */,
+				CEA87C86271FD7B500564DC8 /* ProfileViewController.swift in Sources */,
 				CE649FF127159B8500774BE9 /* newsApp.xcdatamodeld in Sources */,
 				CEA87C6B271ED4F700564DC8 /* SignInViewController.swift in Sources */,
 				CE649FE927159B8500774BE9 /* SceneDelegate.swift in Sources */,
 				CEA87C84271F4FE800564DC8 /* UIColorExtensions.swift in Sources */,
+				CEA87C88271FD7EF00564DC8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
