@@ -17,14 +17,20 @@ class HomeViewModel {
     
     func getNews() {
         guard let url = URL(string: "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=4812833d0d0345e4be9d3fd2efb9ff84") else {
-                return
-            }
+            return }
         let request = AF.request(url)
         request.responseJSON(completionHandler: { response in
-            debugPrint(response)
-            print("Result of Reponse Serialization \(response.result)")
-    })
-      
+        switch response.result {
+            case .success:
+                let data = response.data ?? Data()
+                let newsData = try? JSONDecoder().decode(ArticlesModel.self, from: data)
+                if let articles = newsData {
+                    self.news = articles.articles
+                }
+            case .failure(let error):
+                print(error)
+            }
+        })
+        
     }
-    
 }

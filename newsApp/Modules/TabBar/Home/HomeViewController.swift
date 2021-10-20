@@ -22,6 +22,11 @@ class HomeViewController: UIViewController {
         createTableView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     private func createTitleLabel() {
         view.addSubview(titleLabel)
         titleLabel.text = "News"
@@ -41,5 +46,23 @@ class HomeViewController: UIViewController {
             maker.width.equalToSuperview()
             maker.height.equalTo(view.bounds.height * 0.8)
         }
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension HomeViewController: UITableViewDelegate { }
+
+// MARK: - UITableViewDataSource
+extension HomeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("-> \(viewModel.news.count)")
+        return viewModel.news.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
 }
