@@ -27,7 +27,7 @@
 		CEA87C84271F4FE800564DC8 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C83271F4FE800564DC8 /* UIColorExtensions.swift */; };
 		CEA87C86271FD7B500564DC8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */; };
 		CEA87C88271FD7EF00564DC8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */; };
-		CEA87C8A271FDBB200564DC8 /* christmas-spin.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C89271FDBB200564DC8 /* christmas-spin.json */; };
+		CEA87C8C271FE93900564DC8 /* pumpkinLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */; };
 		D8F2C0B1FB8898D4ED41C2E5 /* Pods_newsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49D11100318ABCDFB183840 /* Pods_newsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +57,7 @@
 		CEA87C83271F4FE800564DC8 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		CEA87C89271FDBB200564DC8 /* christmas-spin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "christmas-spin.json"; sourceTree = "<group>"; };
+		CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pumpkinLoading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA87C5D271EC36400564DC8 /* loading.json */,
-				CEA87C89271FDBB200564DC8 /* christmas-spin.json */,
+				CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -298,9 +298,9 @@
 				CE649FEE27159B8500774BE9 /* Main.storyboard in Resources */,
 				CEA87C68271ED16A00564DC8 /* Dosis-Regular.ttf in Resources */,
 				CEA87C6D271ED50200564DC8 /* SignIn.storyboard in Resources */,
+				CEA87C8C271FE93900564DC8 /* pumpkinLoading.json in Resources */,
 				CEA87C5E271EC36400564DC8 /* loading.json in Resources */,
 				CEA87C7C271F496800564DC8 /* Home.storyboard in Resources */,
-				CEA87C8A271FDBB200564DC8 /* christmas-spin.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

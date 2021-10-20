@@ -37,16 +37,16 @@ class ProfileViewController: UIViewController {
     
     private func createAnimationView() {
         view.addSubview(animationView)
-        animationView.animation = Animation.named("christmas-spin")
+        animationView.animation = Animation.named("pumpkinLoading")
         animationView.contentMode = .scaleAspectFit
         animationView.alpha = 0.8
         animationView.loopMode = .loop
         
         animationView.snp.makeConstraints { maker in
-            maker.height.equalTo(view.bounds.height * 0.3)
-            maker.width.equalTo(view.bounds.height * 0.3)
+            maker.height.equalTo(view.bounds.height * 0.5)
+            maker.width.equalTo(view.bounds.height * 0.5)
             maker.centerX.equalToSuperview()
-            maker.bottom.equalTo(label).inset(-view.bounds.width * 0.1)
+            maker.bottom.equalTo(label).inset(-view.bounds.width * 0.3)
         }
     }
 }
