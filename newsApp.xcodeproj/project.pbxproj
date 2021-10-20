@@ -29,6 +29,7 @@
 		CEA87C88271FD7EF00564DC8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */; };
 		CEA87C8C271FE93900564DC8 /* pumpkinLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */; };
 		CEA87C8E271FEE2F00564DC8 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C8D271FEE2F00564DC8 /* NewsModel.swift */; };
+		CEA87C90271FF23900564DC8 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C8F271FF23900564DC8 /* APIConstants.swift */; };
 		D8F2C0B1FB8898D4ED41C2E5 /* Pods_newsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49D11100318ABCDFB183840 /* Pods_newsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pumpkinLoading.json; sourceTree = "<group>"; };
 		CEA87C8D271FEE2F00564DC8 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		CEA87C8F271FF23900564DC8 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 		CEA87C7F271F4D1300564DC8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CEA87C8F271FF23900564DC8 /* APIConstants.swift */,
 				CEA87C80271F4D3E00564DC8 /* Extensions */,
 			);
 			path = Utils;
@@ -381,6 +384,7 @@
 				CEA87C7E271F4B6200564DC8 /* HomeViewController.swift in Sources */,
 				CEA87C86271FD7B500564DC8 /* ProfileViewController.swift in Sources */,
 				CE649FF127159B8500774BE9 /* newsApp.xcdatamodeld in Sources */,
+				CEA87C90271FF23900564DC8 /* APIConstants.swift in Sources */,
 				CEA87C6B271ED4F700564DC8 /* SignInViewController.swift in Sources */,
 				CEA87C8E271FEE2F00564DC8 /* NewsModel.swift in Sources */,
 				CE649FE927159B8500774BE9 /* SceneDelegate.swift in Sources */,
