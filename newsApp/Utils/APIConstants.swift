@@ -14,3 +14,5 @@ struct APIConstants {
     static let nameKey = "apiKey"
     static let valueKey = "4812833d0d0345e4be9d3fd2efb9ff84"
 }
+
+// let endPoint = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=4812833d0d0345e4be9d3fd2efb9ff84"

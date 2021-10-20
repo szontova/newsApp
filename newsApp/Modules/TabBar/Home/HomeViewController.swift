@@ -11,10 +11,13 @@ class HomeViewController: UIViewController {
     
     private let titleLabel = UILabel()
     private let tableView = UITableView()
+    
+    private var viewModel: HomeViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .darkness
+        viewModel = HomeViewModel()
         createTitleLabel()
         createTableView()
     }

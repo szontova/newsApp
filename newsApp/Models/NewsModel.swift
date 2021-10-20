@@ -7,20 +7,16 @@
 
 import Foundation
 
-
-class NewsModel {
+struct NewsModel: Codable {
     let title: String
     let description: String
-    let date: Date
-    let source: String
-    let link: URL?
+    let url: URL?
+    let urlToImage: String
 
-    
-    init(title: String, description: String, date: Date, source: String, link: URL?) {
+    init(title: String, description: String, urlToImage: String, url: URL?) {
         self.title = title
         self.description = description
-        self.date = date
-        self.source = source
-        self.link = link
+        self.urlToImage = urlToImage
+        self.url = url
     }
 }

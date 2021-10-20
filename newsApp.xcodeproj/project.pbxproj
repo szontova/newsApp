@@ -30,6 +30,7 @@
 		CEA87C8C271FE93900564DC8 /* pumpkinLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */; };
 		CEA87C8E271FEE2F00564DC8 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C8D271FEE2F00564DC8 /* NewsModel.swift */; };
 		CEA87C90271FF23900564DC8 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C8F271FF23900564DC8 /* APIConstants.swift */; };
+		CEA87C92271FF28900564DC8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C91271FF28900564DC8 /* HomeViewModel.swift */; };
 		D8F2C0B1FB8898D4ED41C2E5 /* Pods_newsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49D11100318ABCDFB183840 /* Pods_newsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pumpkinLoading.json; sourceTree = "<group>"; };
 		CEA87C8D271FEE2F00564DC8 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		CEA87C8F271FF23900564DC8 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		CEA87C91271FF28900564DC8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,10 +214,9 @@
 		CEA87C7A271F480100564DC8 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				CEA87C7B271F496800564DC8 /* Home.storyboard */,
-				CEA87C7D271F4B6200564DC8 /* HomeViewController.swift */,
-				CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */,
-				CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */,
+				CEA87C95271FF2B900564DC8 /* Home */,
+				CEA87C93271FF29500564DC8 /* Profile */,
+				CEA87C94271FF2A100564DC8 /* Settings */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -236,6 +237,32 @@
 				CEA87C83271F4FE800564DC8 /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEA87C93271FF29500564DC8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CEA87C94271FF2A100564DC8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CEA87C95271FF2B900564DC8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CEA87C7B271F496800564DC8 /* Home.storyboard */,
+				CEA87C7D271F4B6200564DC8 /* HomeViewController.swift */,
+				CEA87C91271FF28900564DC8 /* HomeViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +416,7 @@
 				CEA87C8E271FEE2F00564DC8 /* NewsModel.swift in Sources */,
 				CE649FE927159B8500774BE9 /* SceneDelegate.swift in Sources */,
 				CEA87C84271F4FE800564DC8 /* UIColorExtensions.swift in Sources */,
+				CEA87C92271FF28900564DC8 /* HomeViewModel.swift in Sources */,
 				CEA87C88271FD7EF00564DC8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
