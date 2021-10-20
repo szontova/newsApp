@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class NewsViewController: UIViewController {
     
     private let titleLabel = UILabel()
     private let tableView = UITableView(frame: .zero)
@@ -55,10 +55,10 @@ class HomeViewController: UIViewController {
 }
 
 // MARK: - UITableViewDelegate
-extension HomeViewController: UITableViewDelegate { }
+extension NewsViewController: UITableViewDelegate { }
 
 // MARK: - UITableViewDataSource
-extension HomeViewController: UITableViewDataSource {
+extension NewsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.news.count
     }

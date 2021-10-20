@@ -25,8 +25,8 @@
 		CEA87C6D271ED50200564DC8 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C6C271ED50200564DC8 /* SignIn.storyboard */; };
 		CEA87C72271EE55700564DC8 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C71271EE55700564DC8 /* SignInViewModel.swift */; };
 		CEA87C75271EFD5E00564DC8 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C74271EFD5E00564DC8 /* SignInModel.swift */; };
-		CEA87C7C271F496800564DC8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C7B271F496800564DC8 /* Home.storyboard */; };
-		CEA87C7E271F4B6200564DC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C7D271F4B6200564DC8 /* HomeViewController.swift */; };
+		CEA87C7C271F496800564DC8 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C7B271F496800564DC8 /* News.storyboard */; };
+		CEA87C7E271F4B6200564DC8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C7D271F4B6200564DC8 /* NewsViewController.swift */; };
 		CEA87C82271F4D5400564DC8 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C81271F4D5400564DC8 /* UIViewControllerExtensions.swift */; };
 		CEA87C84271F4FE800564DC8 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C83271F4FE800564DC8 /* UIColorExtensions.swift */; };
 		CEA87C86271FD7B500564DC8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */; };
@@ -34,7 +34,7 @@
 		CEA87C8C271FE93900564DC8 /* pumpkinLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */; };
 		CEA87C8E271FEE2F00564DC8 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C8D271FEE2F00564DC8 /* NewsModel.swift */; };
 		CEA87C90271FF23900564DC8 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C8F271FF23900564DC8 /* APIConstants.swift */; };
-		CEA87C92271FF28900564DC8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C91271FF28900564DC8 /* HomeViewModel.swift */; };
+		CEA87C92271FF28900564DC8 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C91271FF28900564DC8 /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,8 +59,8 @@
 		CEA87C6C271ED50200564DC8 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		CEA87C71271EE55700564DC8 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		CEA87C74271EFD5E00564DC8 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
-		CEA87C7B271F496800564DC8 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		CEA87C7D271F4B6200564DC8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEA87C7B271F496800564DC8 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		CEA87C7D271F4B6200564DC8 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		CEA87C81271F4D5400564DC8 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		CEA87C83271F4FE800564DC8 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pumpkinLoading.json; sourceTree = "<group>"; };
 		CEA87C8D271FEE2F00564DC8 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		CEA87C8F271FF23900564DC8 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
-		CEA87C91271FF28900564DC8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CEA87C91271FF28900564DC8 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		EC5D8F3E97F25A791F2E442F /* Pods-newsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsApp.debug.xcconfig"; path = "Target Support Files/Pods-newsApp/Pods-newsApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,7 +230,7 @@
 		CEA87C7A271F480100564DC8 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				CEA87C95271FF2B900564DC8 /* Home */,
+				CEA87C95271FF2B900564DC8 /* News */,
 				CEA87C93271FF29500564DC8 /* Profile */,
 				CEA87C94271FF2A100564DC8 /* Settings */,
 			);
@@ -271,15 +271,15 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		CEA87C95271FF2B900564DC8 /* Home */ = {
+		CEA87C95271FF2B900564DC8 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				CEA87C7B271F496800564DC8 /* Home.storyboard */,
-				CEA87C7D271F4B6200564DC8 /* HomeViewController.swift */,
-				CEA87C91271FF28900564DC8 /* HomeViewModel.swift */,
+				CEA87C7B271F496800564DC8 /* News.storyboard */,
+				CEA87C7D271F4B6200564DC8 /* NewsViewController.swift */,
+				CEA87C91271FF28900564DC8 /* NewsViewModel.swift */,
 				CE0C387D27202971002B730F /* Cells */,
 			);
-			path = Home;
+			path = News;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,7 +351,7 @@
 				CEA87C6D271ED50200564DC8 /* SignIn.storyboard in Resources */,
 				CEA87C8C271FE93900564DC8 /* pumpkinLoading.json in Resources */,
 				CEA87C5E271EC36400564DC8 /* loading.json in Resources */,
-				CEA87C7C271F496800564DC8 /* Home.storyboard in Resources */,
+				CEA87C7C271F496800564DC8 /* News.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +426,7 @@
 				CE649FE727159B8500774BE9 /* AppDelegate.swift in Sources */,
 				CEA87C75271EFD5E00564DC8 /* SignInModel.swift in Sources */,
 				CEA87C82271F4D5400564DC8 /* UIViewControllerExtensions.swift in Sources */,
-				CEA87C7E271F4B6200564DC8 /* HomeViewController.swift in Sources */,
+				CEA87C7E271F4B6200564DC8 /* NewsViewController.swift in Sources */,
 				CE0C387C27202449002B730F /* ArticlesModel.swift in Sources */,
 				CEA87C86271FD7B500564DC8 /* ProfileViewController.swift in Sources */,
 				CE649FF127159B8500774BE9 /* newsApp.xcdatamodeld in Sources */,
@@ -436,7 +436,7 @@
 				CE649FE927159B8500774BE9 /* SceneDelegate.swift in Sources */,
 				CEA87C84271F4FE800564DC8 /* UIColorExtensions.swift in Sources */,
 				CE0C388427202F03002B730F /* NewsTableViewCell.swift in Sources */,
-				CEA87C92271FF28900564DC8 /* HomeViewModel.swift in Sources */,
+				CEA87C92271FF28900564DC8 /* NewsViewModel.swift in Sources */,
 				CEA87C88271FD7EF00564DC8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

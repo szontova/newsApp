@@ -65,6 +65,7 @@ class NewsTableViewCell: UITableViewCell {
         subLabel.font = UIFont(name: "Dosis-Regular", size: 18)
         subLabel.textColor = .freeze
         subLabel.numberOfLines = 5
+        subLabel.textAlignment = .justified
         subLabel.snp.makeConstraints { maker in
             maker.top.equalTo(titleImageView).inset(10)
             maker.left.equalTo(titleImageView.snp.right).inset(-20)

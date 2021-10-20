@@ -130,7 +130,7 @@ class SignInViewController: UIViewController {
             UIView.transition(with: self.view, duration: 0.3, options: .transitionCrossDissolve, animations: {
                 self.loadingView.removeFromSuperview()
                 if self.isCorrect {
-                    self.performSegue(withIdentifier: "toHomeSegue", sender: nil)
+                    self.performSegue(withIdentifier: "toNewsSegue", sender: nil)
                 } else {
                     self.createErrorLabel()
                 }
