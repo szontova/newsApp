@@ -12,7 +12,7 @@
         <!--Item-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="SettingsViewController" customModule="newsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="newsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="491" y="690"/>
+            <point key="canvasLocation" x="-1358" y="672"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="UzQ-fV-9zr">
@@ -47,7 +47,7 @@
         <!--Item-->
         <scene sceneID="wot-PN-MdY">
             <objects>
-                <viewController id="JEl-mn-Feh" customClass="HomeViewController" customModule="newsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JEl-mn-Feh" customClass="ProfileViewController" customModule="newsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dyq-aA-kpN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,12 +59,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8l-ZA-1DV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1316" y="690"/>
+            <point key="canvasLocation" x="-426" y="672"/>
         </scene>
         <!--Item-->
         <scene sceneID="cXg-Ix-D9s">
             <objects>
-                <viewController id="CZz-GY-glc" customClass="ProfileViewController" customModule="newsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CZz-GY-glc" customClass="SettingsViewController" customModule="newsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Tj-FK-Gud">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSz-mc-9e3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-426" y="690"/>
+            <point key="canvasLocation" x="516" y="672"/>
         </scene>
     </scenes>
     <resources>

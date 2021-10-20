@@ -153,9 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				CE649FF427159B8500774BE9 /* LaunchScreen.storyboard */,
-				CEA87C7A271F480100564DC8 /* Home */,
 				CE901A10271D4A0200DEC766 /* Main */,
 				CEA87C69271ED49400564DC8 /* SignIn */,
+				CEA87C7A271F480100564DC8 /* TabBar */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		CEA87C7A271F480100564DC8 /* Home */ = {
+		CEA87C7A271F480100564DC8 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				CEA87C7B271F496800564DC8 /* Home.storyboard */,
@@ -212,7 +212,7 @@
 				CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */,
 				CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */,
 			);
-			path = Home;
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		CEA87C7F271F4D1300564DC8 /* Utils */ = {

@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  SettingsViewController.swift
 //  newsApp
 //
 //  Created by User on 20.10.21.
@@ -8,7 +8,7 @@
 import Lottie
 import UIKit
 
-class ProfileViewController: UIViewController {
+class SettingsViewController: UIViewController {
     private let label = UILabel()
     private let animationView = AnimationView()
 
@@ -17,6 +17,11 @@ class ProfileViewController: UIViewController {
         view.backgroundColor = .darkness
         createLabel()
         createAnimationView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        animationView.play()
     }
     
     private func createLabel() {
@@ -36,7 +41,6 @@ class ProfileViewController: UIViewController {
         animationView.contentMode = .scaleAspectFit
         animationView.alpha = 0.8
         animationView.loopMode = .loop
-        animationView.play()
         
         animationView.snp.makeConstraints { maker in
             maker.height.equalTo(view.bounds.height * 0.3)
@@ -45,5 +49,4 @@ class ProfileViewController: UIViewController {
             maker.bottom.equalTo(label).inset(-view.bounds.width * 0.1)
         }
     }
-
 }
