@@ -157,7 +157,7 @@ class SignInViewController: UIViewController {
     
     private func getCode() -> String {
         if signInViewModel.user.isEmpty {
-            signInViewModel.addUser(code: codeTextField.text ?? "", date: getDate())
+            signInViewModel.addUser(code: codeTextField.text ?? "", date: getDate(), isLogout: true)
         }
         return signInViewModel.user[0].code
     }

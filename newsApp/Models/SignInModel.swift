@@ -10,13 +10,15 @@ import UIKit
 struct SignInModel: Codable {    
     let code: String
     let date: String
+    let isLogout: Bool
     
-    init(code: String, date: String) {
+    init(code: String, date: String, isLogout: Bool) {
         self.code = code
         self.date = date
+        self.isLogout = isLogout
     }
     
     func updateCompletion() -> SignInModel {
-        return SignInModel(code: code, date: date)
+        return SignInModel(code: code, date: date, isLogout: isLogout)
     }
 }
