@@ -28,8 +28,8 @@ class SignInViewModel {
         self.user = savedItems
     }
     
-    func addUser(code: String, date: String) {
-        let data = SignInModel(code: code, date: date)
+    func addUser(code: String, date: String, isLogout: Bool) {
+        let data = SignInModel(code: code, date: date, isLogout: isLogout)
         user.append(data)
     }
     
