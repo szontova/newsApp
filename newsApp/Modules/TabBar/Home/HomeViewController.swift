@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     private let titleLabel = UILabel()
-    private let tableView = UITableView()
+    private let tableView = UITableView(frame: .zero)
     
     private var viewModel: HomeViewModel!
 
@@ -42,13 +42,15 @@ class HomeViewController: UIViewController {
         view.addSubview(tableView)
         tableView.backgroundColor = .clear
         tableView.snp.makeConstraints { maker in
-            maker.top.equalTo(titleLabel)
+            maker.top.equalTo(titleLabel).inset(view.bounds.width * 0.1)
             maker.width.equalToSuperview()
             maker.height.equalTo(view.bounds.height * 0.8)
         }
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.estimatedRowHeight = 200
+        tableView.register(NewsTableViewCell.nib, forCellReuseIdentifier: NewsTableViewCell.identifier)
     }
 }
 
@@ -58,11 +60,20 @@ extension HomeViewController: UITableViewDelegate { }
 // MARK: - UITableViewDataSource
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("-> \(viewModel.news.count)")
         return viewModel.news.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.identifier, for: indexPath) as? NewsTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        cell.configure(news: viewModel.news[indexPath.item])
+        
+        return cell
     }
 }
