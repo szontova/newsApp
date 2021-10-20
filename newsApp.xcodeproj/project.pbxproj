@@ -28,6 +28,7 @@
 		CEA87C86271FD7B500564DC8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */; };
 		CEA87C88271FD7EF00564DC8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */; };
 		CEA87C8C271FE93900564DC8 /* pumpkinLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */; };
+		CEA87C8E271FEE2F00564DC8 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C8D271FEE2F00564DC8 /* NewsModel.swift */; };
 		D8F2C0B1FB8898D4ED41C2E5 /* Pods_newsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49D11100318ABCDFB183840 /* Pods_newsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		CEA87C85271FD7B500564DC8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CEA87C87271FD7EF00564DC8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pumpkinLoading.json; sourceTree = "<group>"; };
+		CEA87C8D271FEE2F00564DC8 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA87C74271EFD5E00564DC8 /* SignInModel.swift */,
+				CEA87C8D271FEE2F00564DC8 /* NewsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				CEA87C86271FD7B500564DC8 /* ProfileViewController.swift in Sources */,
 				CE649FF127159B8500774BE9 /* newsApp.xcdatamodeld in Sources */,
 				CEA87C6B271ED4F700564DC8 /* SignInViewController.swift in Sources */,
+				CEA87C8E271FEE2F00564DC8 /* NewsModel.swift in Sources */,
 				CE649FE927159B8500774BE9 /* SceneDelegate.swift in Sources */,
 				CEA87C84271F4FE800564DC8 /* UIColorExtensions.swift in Sources */,
 				CEA87C88271FD7EF00564DC8 /* SettingsViewController.swift in Sources */,
