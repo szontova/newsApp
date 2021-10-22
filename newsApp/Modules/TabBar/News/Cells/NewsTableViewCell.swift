@@ -14,18 +14,23 @@ class NewsTableViewCell: UITableViewCell {
     private let titleImageView = UIImageView()
     
     static let identifier = "newsTableViewCell"
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        contentView.backgroundColor = .darkness
-        createTitleLabel()
-        createTitleImageView()
-        createSubLabel()
+    
+    // MARK: - Lifecycle
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        configureUI()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - Setup
-    static var nib: UINib {
-        UINib(nibName: String(describing: Self.self), bundle: Bundle.main)
+    private func configureUI() {
+        backgroundColor = .darkness
+        createTitleLabel()
+        createTitleImageView()
+        createSubLabel()
     }
     
     func configure(news: NewsModel) {

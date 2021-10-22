@@ -9,50 +9,30 @@ import UIKit
 
 class NewsViewController: UIViewController {
     
-    private let titleLabel = UILabel()
-    private let tableView = UITableView(frame: .zero)
-    
+    private var newsView = NewsView()
     private var viewModel: HomeViewModel!
 
     // MARK: - Lifecycle
+    override func loadView() {
+        view = newsView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .darkness
         viewModel = HomeViewModel()
-        createTitleLabel()
-        createTableView()
+        setupTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tableView.reloadData()
+        newsView.tableView.reloadData()
     }
     
-    // MARK: - Setup
-    private func createTitleLabel() {
-        view.addSubview(titleLabel)
-        titleLabel.text = "News"
-        titleLabel.font = UIFont(name: "Dosis-Regular", size: 24)
-        titleLabel.textColor = .freeze
-        titleLabel.snp.makeConstraints { maker in
-            maker.centerX.equalToSuperview()
-            maker.top.equalTo(view.bounds.height * 0.1)
-        }
-    }
-    
-    private func createTableView() {
-        view.addSubview(tableView)
-        tableView.backgroundColor = .clear
-        tableView.snp.makeConstraints { maker in
-            maker.top.equalTo(titleLabel).inset(view.bounds.width * 0.1)
-            maker.width.equalToSuperview()
-            maker.height.equalTo(view.bounds.height * 0.8)
-        }
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.estimatedRowHeight = 200
-        tableView.register(NewsTableViewCell.nib, forCellReuseIdentifier: NewsTableViewCell.identifier)
+    private func setupTableView() {
+        newsView.tableView.delegate = self
+        newsView.tableView.dataSource = self
+        newsView.tableView.estimatedRowHeight = 200
+        newsView.tableView.register(NewsTableViewCell.self, forCellReuseIdentifier: NewsTableViewCell.identifier)
     }
 }
 
