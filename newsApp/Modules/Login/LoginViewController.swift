@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         signInViewModel = LoginViewModel()
-        loginView.signInButton.addTarget(self, action: #selector(tappedSignInButton), for: .touchUpInside)
+        loginView.loginButton.addTarget(self, action: #selector(tappedSignInButton), for: .touchUpInside)
         checkCode()
     }
     
@@ -35,11 +35,7 @@ class LoginViewController: UIViewController {
         loginView.animationView.play { _ in
             UIView.transition(with: self.view, duration: 0.3, options: .transitionCrossDissolve, animations: {
                 self.loginView.loadingView.isHidden = true
-                if self.isCorrect {
-                    self.navigationController?.pushViewController(NewsViewController(), animated: true)
-                } else {
-                    self.loginView.errorLabel.isHidden = false
-                }
+                self.moveToHome()
             })
         }
     }
@@ -48,7 +44,7 @@ class LoginViewController: UIViewController {
     private func checkCode() {
         if signInViewModel.user.isEmpty {
             loginView.titleLabel.text = "Add your login code"
-            loginView.signInButton.setTitle("Add", for: .normal)
+            loginView.loginButton.setTitle("Add", for: .normal)
         }
     }
     
@@ -66,6 +62,14 @@ class LoginViewController: UIViewController {
             signInViewModel.addUser(code: loginView.codeTextField.text ?? "", date: getDate(), isLogout: true)
         }
         return signInViewModel.user[0].code
+    }
+    
+    private func moveToHome() {
+        if isCorrect {
+           navigationController?.pushViewController(TabBarController(), animated: true)
+        } else {
+            loginView.errorLabel.isHidden = false
+        }
     }
     
     // MARK: - Actions

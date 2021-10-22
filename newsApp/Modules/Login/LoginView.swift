@@ -13,7 +13,7 @@ class LoginView: UIView {
     let titleLabel = UILabel()
     let errorLabel = UILabel()
     let codeTextField = SGCodeTextField()
-    let signInButton = UIButton(type: .system)
+    let loginButton = UIButton(type: .system)
     let loadingView = UIView()
     let animationView = AnimationView()
     
@@ -35,7 +35,7 @@ class LoginView: UIView {
         createTitleLabel()
         createCodeTextField()
         createErrorLabel()
-        createSignInButton()
+        createLoginButton()
         createLoadingView()
     }
     
@@ -80,11 +80,11 @@ class LoginView: UIView {
         codeTextField.textChangeHandler = { text, _ in
             self.codeTextField.digitBorderColorFocused = self.colors.randomElement()!
             if text?.count == 6 {
-                self.signInButton.isUserInteractionEnabled = true
-                self.signInButton.alpha = 1.0
+                self.loginButton.isUserInteractionEnabled = true
+                self.loginButton.alpha = 1.0
             } else {
-                self.signInButton.isUserInteractionEnabled = false
-                self.signInButton.alpha = 0.5
+                self.loginButton.isUserInteractionEnabled = false
+                self.loginButton.alpha = 0.5
             }
         }
         
@@ -96,21 +96,21 @@ class LoginView: UIView {
         }
     }
     
-    private func createSignInButton() {
-        addSubview(signInButton)
-        signInButton.backgroundColor = colors.randomElement()
-        signInButton.setTitle("Sign In", for: .normal)
-        signInButton.snp.makeConstraints { maker in
+    private func createLoginButton() {
+        addSubview(loginButton)
+        loginButton.backgroundColor = colors.randomElement()
+        loginButton.setTitle("Login", for: .normal)
+        loginButton.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
             maker.width.equalTo(200)
             maker.top.equalTo(UIScreen.main.bounds.height * 0.7)
             maker.height.equalTo(50)
         }
-        signInButton.layer.cornerRadius = 20
-        signInButton.setTitleColor(.white, for: .normal)
-        signInButton.titleLabel?.font = UIFont(name: "Dosis-Regular", size: 24)
-        signInButton.isUserInteractionEnabled = false
-        signInButton.alpha = 0.5
+        loginButton.layer.cornerRadius = 20
+        loginButton.setTitleColor(.white, for: .normal)
+        loginButton.titleLabel?.font = UIFont(name: "Dosis-Regular", size: 24)
+        loginButton.isUserInteractionEnabled = false
+        loginButton.alpha = 0.5
     }
     
     private func createLoadingView() {
@@ -127,7 +127,7 @@ class LoginView: UIView {
     private func createAnimationView() {
         loadingView.addSubview(animationView)
         animationView.animation = Animation.named("loading")
-        animationView.contentMode = .scaleAspectFit
+        animationView.contentMode = .scaleAspectFit                                                         
         
         animationView.snp.makeConstraints { maker in
             maker.height.equalTo(UIScreen.main.bounds.height * 0.5)
