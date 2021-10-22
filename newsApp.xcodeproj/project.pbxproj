@@ -182,8 +182,8 @@
 		CE901A10271D4A0200DEC766 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CE649FEA27159B8500774BE9 /* MainViewController.swift */,
 				CE8438DB2722A625004A6F8F /* MainView.swift */,
+				CE649FEA27159B8500774BE9 /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -208,9 +208,9 @@
 		CEA87C69271ED49400564DC8 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				CE8438DD2722B3B1004A6F8F /* LoginView.swift */,
 				CEA87C6A271ED4F700564DC8 /* LoginViewController.swift */,
 				CEA87C71271EE55700564DC8 /* LoginViewModel.swift */,
-				CE8438DD2722B3B1004A6F8F /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";

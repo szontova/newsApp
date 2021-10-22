@@ -11,7 +11,6 @@ import UIKit
 
 class MainView: UIView {
     let animationView = AnimationView()
-    let label = UILabel()
     
     // MARK: - Lifecycle
     override init(frame: CGRect) {
