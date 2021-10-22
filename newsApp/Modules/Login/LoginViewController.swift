@@ -12,7 +12,7 @@ import UIKit
 class LoginViewController: UIViewController {
     
     private var loginView = LoginView()
-    private var signInViewModel: LoginViewModel!
+    private var loginViewModel: LoginViewModel!
     
     private var isCorrect = false
     
@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        signInViewModel = LoginViewModel()
+        loginViewModel = LoginViewModel()
         loginView.loginButton.addTarget(self, action: #selector(tappedSignInButton), for: .touchUpInside)
         checkCode()
     }
@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Logic
     private func checkCode() {
-        if signInViewModel.user.isEmpty {
+        if loginViewModel.user.isEmpty {
             loginView.titleLabel.text = "Add your login code"
             loginView.loginButton.setTitle("Add", for: .normal)
         }
@@ -58,15 +58,17 @@ class LoginViewController: UIViewController {
     }
 
     private func getCode() -> String {
-        if signInViewModel.user.isEmpty {
-            signInViewModel.addUser(code: loginView.codeTextField.text ?? "", date: getDate(), isLogout: true)
+        if loginViewModel.user.isEmpty {
+            loginViewModel.addUser(code: loginView.codeTextField.text ?? "", date: getDate(), isLogout: true)
         }
-        return signInViewModel.user[0].code
+        return loginViewModel.user[0].code
     }
     
     private func moveToHome() {
         if isCorrect {
-           navigationController?.pushViewController(TabBarController(), animated: true)
+            loginViewModel.user[0].date = getDate()
+            loginViewModel.updateUser(item: loginViewModel.user[0])
+            navigationController?.pushViewController(TabBarController(), animated: true)
         } else {
             loginView.errorLabel.isHidden = false
         }

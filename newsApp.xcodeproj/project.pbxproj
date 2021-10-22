@@ -18,6 +18,7 @@
 		CE649FF627159B8500774BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE649FF427159B8500774BE9 /* LaunchScreen.storyboard */; };
 		CE64A0022715A31400774BE9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CE64A0012715A31400774BE9 /* .swiftlint.yml */; };
 		CE80B55A2722D177004EDE4A /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80B5592722D177004EDE4A /* NewsView.swift */; };
+		CE80B55C27230194004EDE4A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80B55B27230194004EDE4A /* StringExtensions.swift */; };
 		CE8438DC2722A625004A6F8F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8438DB2722A625004A6F8F /* MainView.swift */; };
 		CE8438DE2722B3B1004A6F8F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8438DD2722B3B1004A6F8F /* LoginView.swift */; };
 		CE8438E02722BCDC004A6F8F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8438DF2722BCDC004A6F8F /* TabBarController.swift */; };
@@ -52,6 +53,7 @@
 		CE649FF727159B8500774BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE64A0012715A31400774BE9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		CE80B5592722D177004EDE4A /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		CE80B55B27230194004EDE4A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		CE8438DB2722A625004A6F8F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CE8438DD2722B3B1004A6F8F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CE8438DF2722BCDC004A6F8F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			children = (
 				CEA87C81271F4D5400564DC8 /* UIViewControllerExtensions.swift */,
 				CEA87C83271F4FE800564DC8 /* UIColorExtensions.swift */,
+				CE80B55B27230194004EDE4A /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				CE80B55A2722D177004EDE4A /* NewsView.swift in Sources */,
 				CE649FE727159B8500774BE9 /* AppDelegate.swift in Sources */,
 				CEA87C75271EFD5E00564DC8 /* SignInModel.swift in Sources */,
+				CE80B55C27230194004EDE4A /* StringExtensions.swift in Sources */,
 				CEA87C82271F4D5400564DC8 /* UIViewControllerExtensions.swift in Sources */,
 				CEA87C7E271F4B6200564DC8 /* NewsViewController.swift in Sources */,
 				CE0C387C27202449002B730F /* ArticlesModel.swift in Sources */,

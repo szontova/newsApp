@@ -8,9 +8,9 @@
 import UIKit
 
 struct SignInModel: Codable {    
-    let code: String
-    let date: String
-    let isLogout: Bool
+    var code: String
+    var date: String
+    var isLogout: Bool
     
     init(code: String, date: String, isLogout: Bool) {
         self.code = code
