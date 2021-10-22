@@ -9,7 +9,7 @@ import UIKit
 
 class LoginViewModel {
     
-    @Published var user: [SignInModel] = [] {
+    @Published var user: [LoginModel] = [] {
         didSet {
             saveUser()
         }
@@ -20,18 +20,18 @@ class LoginViewModel {
     }
     
     func getUser() {
-        guard let data = UserDefaults.standard.data(forKey: "user"), let savedItems = try? JSONDecoder().decode([SignInModel].self, from: data)
+        guard let data = UserDefaults.standard.data(forKey: "user"), let savedItems = try? JSONDecoder().decode([LoginModel].self, from: data)
         else { return }
 
         self.user = savedItems
     }
     
     func addUser(code: String, date: String, isLogout: Bool) {
-        let data = SignInModel(code: code, date: date, isLogout: isLogout)
+        let data = LoginModel(code: code, date: date, isLogout: isLogout)
         user.append(data)
     }
     
-    func updateUser(item: SignInModel) {
+    func updateUser(item: LoginModel) {
        user[0] = item.updateCompletion()
     }
     

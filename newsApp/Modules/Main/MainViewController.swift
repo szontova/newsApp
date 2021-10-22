@@ -33,8 +33,15 @@ class MainViewController: UIViewController {
     // MARK: - Logic
     private func moveToLogin() {
         let loginModel = LoginViewModel()
-        let dateDifference = getDateDifference(loginModel.user[0].date.getDate(), getTodayDate().getDate())
-        if loginModel.user[0].isLogout && dateDifference < 1 {
+        var isLogout = false
+        var dateDifference = 0
+        
+        if !loginModel.user.isEmpty {
+            dateDifference = getDateDifference(loginModel.user[0].date.getDate(), getTodayDate().getDate())
+            isLogout = loginModel.user[0].isLogout
+        }
+        
+        if isLogout && dateDifference < 1 {
             moveToHome()
         } else {
             self.navigationController?.pushViewController(LoginViewController(), animated: true)

@@ -9,46 +9,18 @@ import Lottie
 import UIKit
 
 class SettingsViewController: UIViewController {
-    private let label = UILabel()
-    private let animationView = AnimationView()
-
+    private var settingsView = SettingsView()
+    
     // MARK: - Lifecycle
+    override func loadView() {
+        view = settingsView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .darkness
-        createLabel()
-        createAnimationView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        animationView.play()
-    }
-    
-    // MARK: - Setup
-    private func createLabel() {
-        view.addSubview(label)
-        label.text = "In developing..."
-        label.font = UIFont(name: "Dosis-Regular", size: 24)
-        label.textColor = .freeze
-        label.snp.makeConstraints { maker in
-            maker.centerX.equalToSuperview()
-            maker.centerY.equalToSuperview()
-        }
-    }
-    
-    private func createAnimationView() {
-        view.addSubview(animationView)
-        animationView.animation = Animation.named("pumpkinLoading")
-        animationView.contentMode = .scaleAspectFit
-        animationView.alpha = 0.8
-        animationView.loopMode = .loop
-        
-        animationView.snp.makeConstraints { maker in
-            maker.height.equalTo(view.bounds.height * 0.5)
-            maker.width.equalTo(view.bounds.height * 0.5)
-            maker.centerX.equalToSuperview()
-            maker.bottom.equalTo(label).inset(-view.bounds.width * 0.3)
-        }
     }
 }
