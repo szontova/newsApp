@@ -19,10 +19,11 @@
 		CE649FF627159B8500774BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE649FF427159B8500774BE9 /* LaunchScreen.storyboard */; };
 		CE64A0022715A31400774BE9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CE64A0012715A31400774BE9 /* .swiftlint.yml */; };
 		CE8438DC2722A625004A6F8F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8438DB2722A625004A6F8F /* MainView.swift */; };
+		CE8438DE2722B3B1004A6F8F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8438DD2722B3B1004A6F8F /* LoginView.swift */; };
 		CEA87C5E271EC36400564DC8 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C5D271EC36400564DC8 /* loading.json */; };
 		CEA87C68271ED16A00564DC8 /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C67271ED16700564DC8 /* Dosis-Regular.ttf */; };
-		CEA87C6B271ED4F700564DC8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C6A271ED4F700564DC8 /* SignInViewController.swift */; };
-		CEA87C72271EE55700564DC8 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C71271EE55700564DC8 /* SignInViewModel.swift */; };
+		CEA87C6B271ED4F700564DC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C6A271ED4F700564DC8 /* LoginViewController.swift */; };
+		CEA87C72271EE55700564DC8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C71271EE55700564DC8 /* LoginViewModel.swift */; };
 		CEA87C75271EFD5E00564DC8 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C74271EFD5E00564DC8 /* SignInModel.swift */; };
 		CEA87C7E271F4B6200564DC8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C7D271F4B6200564DC8 /* NewsViewController.swift */; };
 		CEA87C82271F4D5400564DC8 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C81271F4D5400564DC8 /* UIViewControllerExtensions.swift */; };
@@ -51,10 +52,11 @@
 		CE649FF727159B8500774BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE64A0012715A31400774BE9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		CE8438DB2722A625004A6F8F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CE8438DD2722B3B1004A6F8F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CEA87C5D271EC36400564DC8 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		CEA87C67271ED16700564DC8 /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.ttf"; sourceTree = "<group>"; };
-		CEA87C6A271ED4F700564DC8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		CEA87C71271EE55700564DC8 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		CEA87C6A271ED4F700564DC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEA87C71271EE55700564DC8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CEA87C74271EFD5E00564DC8 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		CEA87C7D271F4B6200564DC8 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		CEA87C81271F4D5400564DC8 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -171,7 +173,7 @@
 			children = (
 				CE649FF427159B8500774BE9 /* LaunchScreen.storyboard */,
 				CE901A10271D4A0200DEC766 /* Main */,
-				CEA87C69271ED49400564DC8 /* SignIn */,
+				CEA87C69271ED49400564DC8 /* Login */,
 				CEA87C7A271F480100564DC8 /* TabBar */,
 			);
 			path = Modules;
@@ -203,13 +205,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		CEA87C69271ED49400564DC8 /* SignIn */ = {
+		CEA87C69271ED49400564DC8 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				CEA87C6A271ED4F700564DC8 /* SignInViewController.swift */,
-				CEA87C71271EE55700564DC8 /* SignInViewModel.swift */,
+				CEA87C6A271ED4F700564DC8 /* LoginViewController.swift */,
+				CEA87C71271EE55700564DC8 /* LoginViewModel.swift */,
+				CE8438DD2722B3B1004A6F8F /* LoginView.swift */,
 			);
-			path = SignIn;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		CEA87C73271EFD4300564DC8 /* Models */ = {
@@ -414,7 +417,7 @@
 			files = (
 				CE649FEB27159B8500774BE9 /* MainViewController.swift in Sources */,
 				CE8438DC2722A625004A6F8F /* MainView.swift in Sources */,
-				CEA87C72271EE55700564DC8 /* SignInViewModel.swift in Sources */,
+				CEA87C72271EE55700564DC8 /* LoginViewModel.swift in Sources */,
 				CE649FE727159B8500774BE9 /* AppDelegate.swift in Sources */,
 				CEA87C75271EFD5E00564DC8 /* SignInModel.swift in Sources */,
 				CEA87C82271F4D5400564DC8 /* UIViewControllerExtensions.swift in Sources */,
@@ -423,11 +426,12 @@
 				CEA87C86271FD7B500564DC8 /* ProfileViewController.swift in Sources */,
 				CE649FF127159B8500774BE9 /* newsApp.xcdatamodeld in Sources */,
 				CEA87C90271FF23900564DC8 /* APIConstants.swift in Sources */,
-				CEA87C6B271ED4F700564DC8 /* SignInViewController.swift in Sources */,
+				CEA87C6B271ED4F700564DC8 /* LoginViewController.swift in Sources */,
 				CEA87C8E271FEE2F00564DC8 /* NewsModel.swift in Sources */,
 				CE649FE927159B8500774BE9 /* SceneDelegate.swift in Sources */,
 				CEA87C84271F4FE800564DC8 /* UIColorExtensions.swift in Sources */,
 				CE0C388427202F03002B730F /* NewsTableViewCell.swift in Sources */,
+				CE8438DE2722B3B1004A6F8F /* LoginView.swift in Sources */,
 				CEA87C92271FF28900564DC8 /* NewsViewModel.swift in Sources */,
 				CEA87C88271FD7EF00564DC8 /* SettingsViewController.swift in Sources */,
 			);

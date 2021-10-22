@@ -26,8 +26,7 @@ class MainViewController: UIViewController {
         mainView.animationView.loopMode = .playOnce
         mainView.animationView.animationSpeed = 0.9
         mainView.animationView.play { _ in
-            let nextVC = SignInViewController()
-            self.navigationController?.pushViewController(nextVC, animated: true)
+            self.navigationController?.pushViewController(LoginViewController(), animated: true)
         }
     }
 }

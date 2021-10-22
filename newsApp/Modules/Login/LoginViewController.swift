@@ -9,9 +9,9 @@ import Lottie
 import SGCodeTextField
 import UIKit
 
-class SignInViewController: UIViewController {
+class LoginViewController: UIViewController {
     
-    private var signInViewModel: SignInViewModel!
+    private var signInViewModel: LoginViewModel!
     private let titleLabel = UILabel()
     private let errorLabel = UILabel()
     private let codeTextField = SGCodeTextField()
@@ -26,7 +26,7 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .darkness
-        signInViewModel = SignInViewModel()
+        signInViewModel = LoginViewModel()
         createTitleLabel()
         createCodeTextField()
         createSignInButton()
@@ -132,7 +132,7 @@ class SignInViewController: UIViewController {
             UIView.transition(with: self.view, duration: 0.3, options: .transitionCrossDissolve, animations: {
                 self.loadingView.removeFromSuperview()
                 if self.isCorrect {
-                    self.performSegue(withIdentifier: "toNewsSegue", sender: nil)
+                    self.navigationController?.pushViewController(NewsViewController(), animated: true)
                 } else {
                     self.createErrorLabel()
                 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignInViewModel {
+class LoginViewModel {
     
     @Published var user: [SignInModel] = [] {
         didSet {
