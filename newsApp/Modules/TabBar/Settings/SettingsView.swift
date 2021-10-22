@@ -10,8 +10,8 @@ import UIKit
 class SettingsView: UIView {
     let titleLabel = UILabel()
     let versionLabel = UILabel()
-    let oneButton = UIButton(type: .system)
-    let twoButton = UIButton(type: .system)
+    let changeLanguageButton = UIButton(type: .system)
+    let changeCodeButton = UIButton(type: .system)
     let logoutButton = UIButton(type: .system)
     
     // MARK: - Lifecycle
@@ -43,36 +43,36 @@ class SettingsView: UIView {
     }
     
     private func createButtons() {
-        createOneButton()
-        createTwoButton()
+        createChangeLanguageButton()
+        createChangeCodeButton()
         createLogoutButton()
     }
     
-    private func createOneButton() {
-        addSubview(oneButton)
-        oneButton.layer.borderWidth = 1
-        oneButton.layer.borderColor = UIColor.lime.cgColor
-        oneButton.setTitle("Change language", for: .normal)
-        oneButton.setTitleColor(.white, for: .normal)
-        oneButton.titleLabel?.font = UIFont(name: "Dosis-Regular", size: 20)
-        oneButton.snp.makeConstraints { maker in
+    private func createChangeLanguageButton() {
+        addSubview(changeLanguageButton)
+        changeLanguageButton.layer.borderWidth = 1
+        changeLanguageButton.layer.borderColor = UIColor.lime.cgColor
+        changeLanguageButton.setTitle("Change language", for: .normal)
+        changeLanguageButton.setTitleColor(.white, for: .normal)
+        changeLanguageButton.titleLabel?.font = UIFont(name: "Dosis-Regular", size: 20)
+        changeLanguageButton.snp.makeConstraints { maker in
             maker.width.equalToSuperview()
             maker.height.equalTo(UIScreen.main.bounds.height * 0.05)
             maker.top.equalTo(titleLabel.snp.bottom).offset(UIScreen.main.bounds.height * 0.04)
         }
     }
     
-    private func createTwoButton() {
-        addSubview(twoButton)
-        twoButton.layer.borderWidth = 1
-        twoButton.layer.borderColor = UIColor.richYellow.cgColor
-        twoButton.setTitle("Change code", for: .normal)
-        twoButton.setTitleColor(.white, for: .normal)
-        twoButton.titleLabel?.font = UIFont(name: "Dosis-Regular", size: 20)
-        twoButton.snp.makeConstraints { maker in
+    private func createChangeCodeButton() {
+        addSubview(changeCodeButton)
+        changeCodeButton.layer.borderWidth = 1
+        changeCodeButton.layer.borderColor = UIColor.richYellow.cgColor
+        changeCodeButton.setTitle("Change code", for: .normal)
+        changeCodeButton.setTitleColor(.white, for: .normal)
+        changeCodeButton.titleLabel?.font = UIFont(name: "Dosis-Regular", size: 20)
+        changeCodeButton.snp.makeConstraints { maker in
             maker.width.equalToSuperview()
             maker.height.equalTo(UIScreen.main.bounds.height * 0.05)
-            maker.top.equalTo(oneButton.snp.bottom).offset(UIScreen.main.bounds.height * 0.04)
+            maker.top.equalTo(changeLanguageButton.snp.bottom).offset(UIScreen.main.bounds.height * 0.04)
         }
     }
     
@@ -86,7 +86,7 @@ class SettingsView: UIView {
         logoutButton.snp.makeConstraints { maker in
             maker.width.equalToSuperview()
             maker.height.equalTo(UIScreen.main.bounds.height * 0.05)
-            maker.top.equalTo(twoButton.snp.bottom).offset(UIScreen.main.bounds.height * 0.04)
+            maker.top.equalTo(changeCodeButton.snp.bottom).offset(UIScreen.main.bounds.height * 0.04)
         }
     }
 
