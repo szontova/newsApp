@@ -28,6 +28,7 @@ class SettingsView: UIView {
     private func configureUI() {
         backgroundColor = .darkness
         createTitleLabel()
+        createVersionLabel()
         createButtons()
     }
     
@@ -39,6 +40,18 @@ class SettingsView: UIView {
         titleLabel.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
             maker.top.equalTo(UIScreen.main.bounds.height * 0.1)
+        }
+    }
+    
+    private func createVersionLabel() {
+        addSubview(versionLabel)
+        versionLabel.text = "v 1.0.0"
+        versionLabel.textColor = .freeze
+        versionLabel.alpha = 0.5
+        versionLabel.font = UIFont(name: "Dosis-Regular", size: 24)
+        versionLabel.snp.makeConstraints { maker in
+            maker.centerX.equalToSuperview()
+            maker.top.equalTo(UIScreen.main.bounds.height * 0.85)
         }
     }
     
