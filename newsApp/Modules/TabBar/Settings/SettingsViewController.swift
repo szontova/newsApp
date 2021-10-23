@@ -18,7 +18,7 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        settingsView.logoutButton.addTarget(self, action: #selector(tappedLogoutButton), for: .touchUpInside)
+        addActions()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,6 +26,11 @@ class SettingsViewController: UIViewController {
     }
     
     // MARK: - Actions
+    private func addActions() {
+        settingsView.logoutButton.addTarget(self, action: #selector(tappedLogoutButton), for: .touchUpInside)
+        settingsView.changeCodeButton.addTarget(self, action: #selector(tappedChangeCodeButton), for: .touchUpInside)
+    }
+    
     @objc private func tappedLogoutButton() {
         guard let secondVC =  navigationController?.viewControllers[1] else { return }
         let loginVC = LoginViewController()
@@ -34,6 +39,10 @@ class SettingsViewController: UIViewController {
         }
         
         navigationController?.popViewController(animated: true)
+    }
+    
+    @objc private func tappedChangeCodeButton() {
+        navigationController?.pushViewController(ChangeCodeViewController(), animated: true)
     }
     
 }
