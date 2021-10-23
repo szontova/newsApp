@@ -57,7 +57,7 @@ class SettingsView: UIView {
         changeLanguageButton.titleLabel?.font = UIFont(name: "Dosis-Regular", size: 20)
         changeLanguageButton.snp.makeConstraints { maker in
             maker.width.equalToSuperview()
-            maker.height.equalTo(UIScreen.main.bounds.height * 0.05)
+            maker.height.equalTo(UIScreen.main.bounds.height * 0.06)
             maker.top.equalTo(titleLabel.snp.bottom).offset(UIScreen.main.bounds.height * 0.04)
         }
     }
@@ -71,7 +71,7 @@ class SettingsView: UIView {
         changeCodeButton.titleLabel?.font = UIFont(name: "Dosis-Regular", size: 20)
         changeCodeButton.snp.makeConstraints { maker in
             maker.width.equalToSuperview()
-            maker.height.equalTo(UIScreen.main.bounds.height * 0.05)
+            maker.height.equalTo(UIScreen.main.bounds.height * 0.06)
             maker.top.equalTo(changeLanguageButton.snp.bottom).offset(UIScreen.main.bounds.height * 0.04)
         }
     }
@@ -85,7 +85,7 @@ class SettingsView: UIView {
         logoutButton.titleLabel?.font = UIFont(name: "Dosis-Regular", size: 20)
         logoutButton.snp.makeConstraints { maker in
             maker.width.equalToSuperview()
-            maker.height.equalTo(UIScreen.main.bounds.height * 0.05)
+            maker.height.equalTo(UIScreen.main.bounds.height * 0.06)
             maker.top.equalTo(changeCodeButton.snp.bottom).offset(UIScreen.main.bounds.height * 0.04)
         }
     }
