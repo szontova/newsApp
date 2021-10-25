@@ -34,6 +34,8 @@ class SettingsViewController: UIViewController {
     @objc private func tappedLogoutButton() {
         guard let secondVC =  navigationController?.viewControllers[1] else { return }
         let loginVC = LoginViewController()
+        let loginModelView = LoginViewModel()
+        loginModelView.user[0].isLogout = true
         if secondVC != loginVC {
             navigationController?.viewControllers[1] = LoginViewController()
         }

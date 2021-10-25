@@ -59,7 +59,7 @@ class LoginViewController: UIViewController {
 
     private func getCode() -> String {
         if loginViewModel.user.isEmpty {
-            loginViewModel.addUser(code: loginView.codeTextField.text ?? "", date: getDate(), isLogout: true)
+            loginViewModel.addUser(code: loginView.codeTextField.text ?? "", date: getDate(), isLogout: false)
         }
         return loginViewModel.user[0].code
     }
@@ -67,6 +67,7 @@ class LoginViewController: UIViewController {
     private func moveToHome() {
         if isCorrect {
             loginViewModel.user[0].date = getDate()
+            loginViewModel.user[0].isLogout = false
             loginViewModel.updateUser(item: loginViewModel.user[0])
             navigationController?.pushViewController(TabBarController(), animated: true)
         } else {
