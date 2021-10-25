@@ -30,7 +30,7 @@ class NewsView: UIView {
     // MARK: - Setup
     private func createTitleLabel() {
         addSubview(titleLabel)
-        titleLabel.text = "News"
+        titleLabel.text = "news_title".localized()
         titleLabel.font = UIFont(name: "Dosis-Regular", size: 24)
         titleLabel.textColor = .freeze
         titleLabel.snp.makeConstraints { maker in

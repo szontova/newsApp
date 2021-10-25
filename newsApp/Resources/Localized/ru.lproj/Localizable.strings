@@ -1,0 +1,15 @@
+"add_title" = "Добавьте пароль для входа";
+"add_button_title" = "Добавить";
+"change_button_title" = "Изменить";
+"change_code_button_title" = "Изменить пароль";
+"change_title" = "Изменить свой пароль";
+"change_subtitle" = "Введите ваш старый пароль";
+"change_second_subtitle" = "Введите ваш новый пароль";
+"developing" = "В разработке...";
+"error_label" = "НЕверный пароль";
+"login_title" = "Введите ваш пароль";
+"login_button_title" = "Войти";
+"logout_button_title" = "Выйти";
+"news_title" = "Новости";
+"profile_title" = "Профиль";
+"settings_title" = "Настройки";

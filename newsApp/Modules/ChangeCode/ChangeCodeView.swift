@@ -50,7 +50,7 @@ class ChangeCodeView: UIView {
     
     private func createTitleLabel() {
         addSubview(titleLabel)
-        titleLabel.text = "Change your login code"
+        titleLabel.text = "change_title".localized()
         titleLabel.textColor = .freeze
         titleLabel.font = UIFont(name: "Dosis-Regular", size: 24)
         titleLabel.snp.makeConstraints { maker in
@@ -61,7 +61,7 @@ class ChangeCodeView: UIView {
     
     private func createOldCodeLabel() {
         addSubview(oldCodeLabel)
-        oldCodeLabel.text = "Enter your login code"
+        oldCodeLabel.text = "change_subtitle".localized()
         oldCodeLabel.textColor = .freeze
         oldCodeLabel.font = UIFont(name: "Dosis-Regular", size: 16)
         oldCodeLabel.alpha = 0.5
@@ -73,7 +73,7 @@ class ChangeCodeView: UIView {
     
     private func createNewCodeLabel() {
         addSubview(newCodeLabel)
-        newCodeLabel.text = "Enter your new login code"
+        newCodeLabel.text = "change_second_subtitle".localized()
         newCodeLabel.textColor = .freeze
         newCodeLabel.font = UIFont(name: "Dosis-Regular", size: 16)
         newCodeLabel.alpha = 0.5
@@ -85,7 +85,7 @@ class ChangeCodeView: UIView {
     
     private func createErrorLabel() {
         addSubview(errorLabel)
-        errorLabel.text = "Incorrect code"
+        errorLabel.text = "error_label".localized()
         errorLabel.textColor = .rosy
         errorLabel.font = UIFont(name: "Dosis-Regular", size: 24)
         errorLabel.isHidden = true
@@ -158,7 +158,7 @@ class ChangeCodeView: UIView {
     private func createChangeButton() {
         addSubview(changeButton)
         changeButton.backgroundColor = colors.randomElement()
-        changeButton.setTitle("Change", for: .normal)
+        changeButton.setTitle("change_button_title".localized(), for: .normal)
         changeButton.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
             maker.width.equalTo(200)

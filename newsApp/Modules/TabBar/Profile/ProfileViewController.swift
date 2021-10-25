@@ -28,7 +28,7 @@ class ProfileViewController: UIViewController {
     // MARK: - Setup
     private func createLabel() {
         view.addSubview(label)
-        label.text = "In developing..."
+        label.text = "developing".localized()
         label.font = UIFont(name: "Dosis-Regular", size: 24)
         label.textColor = .freeze
         label.snp.makeConstraints { maker in

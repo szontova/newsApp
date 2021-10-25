@@ -43,8 +43,8 @@ class LoginViewController: UIViewController {
     // MARK: - Logic
     private func checkCode() {
         if loginViewModel.user.isEmpty {
-            loginView.titleLabel.text = "Add your login code"
-            loginView.loginButton.setTitle("Add", for: .normal)
+            loginView.titleLabel.text = "add_title".localized()
+            loginView.loginButton.setTitle("add_button_title".localized(), for: .normal)
         }
     }
     

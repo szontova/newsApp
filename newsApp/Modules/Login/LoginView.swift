@@ -41,7 +41,7 @@ class LoginView: UIView {
     
     private func createTitleLabel() {
         addSubview(titleLabel)
-        titleLabel.text = "Enter your login code"
+        titleLabel.text = "login_title".localized()
         titleLabel.textColor = .freeze
         titleLabel.font = UIFont(name: "Dosis-Regular", size: 24)
         titleLabel.snp.makeConstraints { maker in
@@ -52,7 +52,7 @@ class LoginView: UIView {
     
     private func createErrorLabel() {
         addSubview(errorLabel)
-        errorLabel.text = "Incorrect code"
+        errorLabel.text = "error_label".localized()
         errorLabel.textColor = .rosy
         errorLabel.font = UIFont(name: "Dosis-Regular", size: 24)
         errorLabel.isHidden = true
@@ -99,7 +99,7 @@ class LoginView: UIView {
     private func createLoginButton() {
         addSubview(loginButton)
         loginButton.backgroundColor = colors.randomElement()
-        loginButton.setTitle("Login", for: .normal)
+        loginButton.setTitle("login_button_title".localized(), for: .normal)
         loginButton.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
             maker.width.equalTo(200)

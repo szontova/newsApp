@@ -40,26 +40,26 @@ class TabBarController: UITabBarController {
     
     private func setupFirstViewControllers() -> UIViewController {
         let newsVC = NewsViewController()
-        newsVC.title = "News"
+        newsVC.title = "news_title".localized()
         return newsVC
     }
     
     private func setupSecondViewControllers() -> UIViewController {
         let profileVC = ProfileViewController()
-        profileVC.title = "Profile"
+        profileVC.title = "profile_title".localized()
         return profileVC
     }
     
     private func setupThirdViewControllers() -> UIViewController {
         let settingsVC = SettingsViewController()
-        settingsVC.title = "Settings"
+        settingsVC.title = "settings_title".localized()
         return settingsVC
     }
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        if item.title == "Profile" {
+        if item.title == "profile_title".localized() {
             tabBar.tintColor = .richYellow
-        } else if item.title == "Settings" {
+        } else if item.title == "settings_title".localized() {
             tabBar.tintColor = .carrot
         } else {
             tabBar.tintColor = .lime
