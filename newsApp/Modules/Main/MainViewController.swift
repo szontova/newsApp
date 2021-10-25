@@ -10,6 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     private var mainView = MainView()
+    private var mainViewModel: MainViewModel!
 
     // MARK: - Lifecycle
     override func loadView() {
@@ -18,6 +19,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainViewModel = MainViewModel()
         setupAnimationView()
     }
     
@@ -32,13 +34,12 @@ class MainViewController: UIViewController {
     
     // MARK: - Logic
     private func moveToLogin() {
-        let loginModel = LoginViewModel()
         var isLogout = true
         var dateDifference = 0
         
-        if !loginModel.user.isEmpty {
-            dateDifference = getDateDifference(loginModel.user[0].date.getDate(), getTodayDate().getDate())
-            isLogout = loginModel.user[0].isLogout
+        if !mainViewModel.user.isEmpty {
+            dateDifference = getDateDifference(mainViewModel.user[0].date.getDate(), getTodayDate().getDate())
+            isLogout = mainViewModel.user[0].isLogout
         }
         
         if !isLogout && dateDifference < 1 {

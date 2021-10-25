@@ -17,6 +17,7 @@
 		CE649FF327159B8500774BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE649FF227159B8500774BE9 /* Assets.xcassets */; };
 		CE649FF627159B8500774BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE649FF427159B8500774BE9 /* LaunchScreen.storyboard */; };
 		CE64A0022715A31400774BE9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CE64A0012715A31400774BE9 /* .swiftlint.yml */; };
+		CE7918202726D61600123803 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79181F2726D61600123803 /* MainViewModel.swift */; };
 		CE80B55A2722D177004EDE4A /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80B5592722D177004EDE4A /* NewsView.swift */; };
 		CE80B55C27230194004EDE4A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80B55B27230194004EDE4A /* StringExtensions.swift */; };
 		CE80B55E27230920004EDE4A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80B55D27230920004EDE4A /* SettingsView.swift */; };
@@ -57,6 +58,7 @@
 		CE649FF527159B8500774BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE649FF727159B8500774BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE64A0012715A31400774BE9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		CE79181F2726D61600123803 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CE80B5592722D177004EDE4A /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		CE80B55B27230194004EDE4A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		CE80B55D27230920004EDE4A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				CE8438DB2722A625004A6F8F /* MainView.swift */,
 				CE649FEA27159B8500774BE9 /* MainViewController.swift */,
+				CE79181F2726D61600123803 /* MainViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				CE649FF127159B8500774BE9 /* newsApp.xcdatamodeld in Sources */,
 				CEA87C90271FF23900564DC8 /* APIConstants.swift in Sources */,
 				CEA87C6B271ED4F700564DC8 /* LoginViewController.swift in Sources */,
+				CE7918202726D61600123803 /* MainViewModel.swift in Sources */,
 				CEBD19072724C80000D54B61 /* ChangeCodeViewController.swift in Sources */,
 				CEA87C8E271FEE2F00564DC8 /* NewsModel.swift in Sources */,
 				CE8438E02722BCDC004A6F8F /* TabBarController.swift in Sources */,
@@ -617,6 +621,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.newsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -638,6 +643,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.project.newsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
