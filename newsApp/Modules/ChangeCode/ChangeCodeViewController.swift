@@ -41,7 +41,7 @@ class ChangeCodeViewController: UIViewController {
         changeCodeView.doneAnimationView.loopMode = .playOnce
         changeCodeView.doneAnimationView.animationSpeed = 0.9
         changeCodeView.doneAnimationView.play { _ in
-            UIView.transition(with: self.view, duration: 0.3, options: .transitionCrossDissolve, animations: {
+            UIView.transition(with: self.view, duration: 1, options: .transitionCrossDissolve, animations: {
                 self.navigationController?.popViewController(animated: true)
             })
         }

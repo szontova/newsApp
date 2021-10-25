@@ -214,7 +214,6 @@ class ChangeCodeView: UIView {
         doneAnimationView.contentMode = .scaleAspectFit
         doneAnimationView.isHidden = true
         
-        
         doneAnimationView.snp.makeConstraints { maker in
             maker.height.equalTo(UIScreen.main.bounds.height * 0.2)
             maker.width.equalTo(UIScreen.main.bounds.height * 0.2)
@@ -222,6 +221,4 @@ class ChangeCodeView: UIView {
             maker.centerY.equalToSuperview()
         }
     }
-    
-    
 }
