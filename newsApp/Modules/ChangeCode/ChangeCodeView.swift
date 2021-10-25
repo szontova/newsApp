@@ -41,8 +41,9 @@ class ChangeCodeView: UIView {
         createNewCodeTextField()
         createOldCodeLabel()
         createNewCodeLabel()
-        createLoginButton()
+        createChangeButton()
         createErrorLabel()
+        createBackButton()
     }
     
     private func createTitleLabel() {
@@ -52,7 +53,7 @@ class ChangeCodeView: UIView {
         titleLabel.font = UIFont(name: "Dosis-Regular", size: 24)
         titleLabel.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
-            maker.top.equalTo(UIScreen.main.bounds.height * 0.12)
+            maker.top.equalTo(UIScreen.main.bounds.height * 0.14)
         }
     }
     
@@ -152,7 +153,7 @@ class ChangeCodeView: UIView {
         }
     }
     
-    private func createLoginButton() {
+    private func createChangeButton() {
         addSubview(changeButton)
         changeButton.backgroundColor = colors.randomElement()
         changeButton.setTitle("Change", for: .normal)
@@ -167,6 +168,17 @@ class ChangeCodeView: UIView {
         changeButton.titleLabel?.font = UIFont(name: "Dosis-Regular", size: 24)
         changeButton.isUserInteractionEnabled = false
         changeButton.alpha = 0.5
+    }
+    
+    private func createBackButton() {
+        addSubview(backButton)
+        backButton.backgroundColor = .clear
+        backButton.snp.makeConstraints { maker in
+            maker.left.equalTo(codeTextField.snp.left)
+            maker.top.equalTo(UIScreen.main.bounds.height * 0.07)
+        }
+        backButton.setImage(UIImage(systemName: "chevron.left"), for: .normal)
+        backButton.tintColor = .freeze
     }
     
 }
