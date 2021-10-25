@@ -68,7 +68,9 @@ class LoginViewController: UIViewController {
         if isCorrect {
             loginViewModel.user[0].date = getDate()
             loginViewModel.user[0].isLogout = false
+            
             loginViewModel.updateUser(item: loginViewModel.user[0])
+            
             navigationController?.pushViewController(TabBarController(), animated: true)
         } else {
             loginView.errorLabel.isHidden = false

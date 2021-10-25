@@ -36,6 +36,7 @@ class SettingsViewController: UIViewController {
         let loginVC = LoginViewController()
         let loginModelView = LoginViewModel()
         loginModelView.user[0].isLogout = true
+        loginModelView.updateUser(item: loginModelView.user[0])
         if secondVC != loginVC {
             navigationController?.viewControllers[1] = LoginViewController()
         }
