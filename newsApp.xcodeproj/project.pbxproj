@@ -20,6 +20,8 @@
 		CE80B55A2722D177004EDE4A /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80B5592722D177004EDE4A /* NewsView.swift */; };
 		CE80B55C27230194004EDE4A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80B55B27230194004EDE4A /* StringExtensions.swift */; };
 		CE80B55E27230920004EDE4A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE80B55D27230920004EDE4A /* SettingsView.swift */; };
+		CE83D38F27269A7B001C2A5C /* ChangeCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE83D38E27269A7B001C2A5C /* ChangeCodeViewModel.swift */; };
+		CE83D3932726D125001C2A5C /* done-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = CE83D3922726D125001C2A5C /* done-animation.json */; };
 		CE8438DC2722A625004A6F8F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8438DB2722A625004A6F8F /* MainView.swift */; };
 		CE8438DE2722B3B1004A6F8F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8438DD2722B3B1004A6F8F /* LoginView.swift */; };
 		CE8438E02722BCDC004A6F8F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8438DF2722BCDC004A6F8F /* TabBarController.swift */; };
@@ -27,7 +29,7 @@
 		CEA87C68271ED16A00564DC8 /* Dosis-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA87C67271ED16700564DC8 /* Dosis-Regular.ttf */; };
 		CEA87C6B271ED4F700564DC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C6A271ED4F700564DC8 /* LoginViewController.swift */; };
 		CEA87C72271EE55700564DC8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C71271EE55700564DC8 /* LoginViewModel.swift */; };
-		CEA87C75271EFD5E00564DC8 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C74271EFD5E00564DC8 /* LoginModel.swift */; };
+		CEA87C75271EFD5E00564DC8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C74271EFD5E00564DC8 /* UserModel.swift */; };
 		CEA87C7E271F4B6200564DC8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C7D271F4B6200564DC8 /* NewsViewController.swift */; };
 		CEA87C82271F4D5400564DC8 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C81271F4D5400564DC8 /* UIViewControllerExtensions.swift */; };
 		CEA87C84271F4FE800564DC8 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA87C83271F4FE800564DC8 /* UIColorExtensions.swift */; };
@@ -58,6 +60,8 @@
 		CE80B5592722D177004EDE4A /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		CE80B55B27230194004EDE4A /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		CE80B55D27230920004EDE4A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CE83D38E27269A7B001C2A5C /* ChangeCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCodeViewModel.swift; sourceTree = "<group>"; };
+		CE83D3922726D125001C2A5C /* done-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "done-animation.json"; sourceTree = "<group>"; };
 		CE8438DB2722A625004A6F8F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CE8438DD2722B3B1004A6F8F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CE8438DF2722BCDC004A6F8F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -65,7 +69,7 @@
 		CEA87C67271ED16700564DC8 /* Dosis-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.ttf"; sourceTree = "<group>"; };
 		CEA87C6A271ED4F700564DC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEA87C71271EE55700564DC8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		CEA87C74271EFD5E00564DC8 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		CEA87C74271EFD5E00564DC8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CEA87C7D271F4B6200564DC8 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		CEA87C81271F4D5400564DC8 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		CEA87C83271F4FE800564DC8 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 		CEA87C56271EC23C00564DC8 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				CE83D3922726D125001C2A5C /* done-animation.json */,
 				CEA87C5D271EC36400564DC8 /* loading.json */,
 				CEA87C8B271FE93900564DC8 /* pumpkinLoading.json */,
 			);
@@ -230,7 +235,7 @@
 			children = (
 				CE0C387B27202449002B730F /* ArticlesModel.swift */,
 				CEA87C8D271FEE2F00564DC8 /* NewsModel.swift */,
-				CEA87C74271EFD5E00564DC8 /* LoginModel.swift */,
+				CEA87C74271EFD5E00564DC8 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 			children = (
 				CEBD19042724C7EC00D54B61 /* ChangeCodeView.swift */,
 				CEBD19062724C80000D54B61 /* ChangeCodeViewController.swift */,
+				CE83D38E27269A7B001C2A5C /* ChangeCodeViewModel.swift */,
 			);
 			path = ChangeCode;
 			sourceTree = "<group>";
@@ -368,6 +374,7 @@
 				CEA87C68271ED16A00564DC8 /* Dosis-Regular.ttf in Resources */,
 				CEA87C8C271FE93900564DC8 /* pumpkinLoading.json in Resources */,
 				CEA87C5E271EC36400564DC8 /* loading.json in Resources */,
+				CE83D3932726D125001C2A5C /* done-animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,10 +447,11 @@
 				CE649FEB27159B8500774BE9 /* MainViewController.swift in Sources */,
 				CE80B55E27230920004EDE4A /* SettingsView.swift in Sources */,
 				CE8438DC2722A625004A6F8F /* MainView.swift in Sources */,
+				CE83D38F27269A7B001C2A5C /* ChangeCodeViewModel.swift in Sources */,
 				CEA87C72271EE55700564DC8 /* LoginViewModel.swift in Sources */,
 				CE80B55A2722D177004EDE4A /* NewsView.swift in Sources */,
 				CE649FE727159B8500774BE9 /* AppDelegate.swift in Sources */,
-				CEA87C75271EFD5E00564DC8 /* LoginModel.swift in Sources */,
+				CEA87C75271EFD5E00564DC8 /* UserModel.swift in Sources */,
 				CE80B55C27230194004EDE4A /* StringExtensions.swift in Sources */,
 				CEA87C82271F4D5400564DC8 /* UIViewControllerExtensions.swift in Sources */,
 				CEA87C7E271F4B6200564DC8 /* NewsViewController.swift in Sources */,

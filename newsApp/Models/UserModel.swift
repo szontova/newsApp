@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct LoginModel: Codable {    
+struct UserModel: Codable {    
     var code: String
     var date: String
     var isLogout: Bool
@@ -18,7 +18,7 @@ struct LoginModel: Codable {
         self.isLogout = isLogout
     }
     
-    func updateCompletion() -> LoginModel {
-        return LoginModel(code: code, date: date, isLogout: isLogout)
+    func updateCompletion() -> UserModel {
+        return UserModel(code: code, date: date, isLogout: isLogout)
     }
 }

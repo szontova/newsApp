@@ -20,6 +20,7 @@ class ChangeCodeView: UIView {
     let changeButton = UIButton(type: .system)
     let loadingView = UIView()
     let animationView = AnimationView()
+    let doneAnimationView = AnimationView()
     
     private let colors = [UIColor.lime, .carrot, .richYellow, .rosy]
     
@@ -44,6 +45,7 @@ class ChangeCodeView: UIView {
         createChangeButton()
         createErrorLabel()
         createBackButton()
+        createLoadingView()
     }
     
     private func createTitleLabel() {
@@ -180,5 +182,46 @@ class ChangeCodeView: UIView {
         backButton.setImage(UIImage(systemName: "chevron.left"), for: .normal)
         backButton.tintColor = .freeze
     }
+    
+    private func createLoadingView() {
+        addSubview(loadingView)
+        loadingView.backgroundColor = #colorLiteral(red: 0.01412864786, green: 0, blue: 0.04351914807, alpha: 0.6966977085)
+        loadingView.isHidden = true
+        loadingView.snp.makeConstraints { maker in
+            maker.width.equalToSuperview()
+            maker.height.equalToSuperview()
+        }
+        createAnimationView()
+        createDoneAnimationView()
+    }
+    
+    private func createAnimationView() {
+        loadingView.addSubview(animationView)
+        animationView.animation = Animation.named("loading")
+        animationView.contentMode = .scaleAspectFit
+        
+        animationView.snp.makeConstraints { maker in
+            maker.height.equalTo(UIScreen.main.bounds.height * 0.5)
+            maker.width.equalTo(UIScreen.main.bounds.height * 0.5)
+            maker.centerX.equalToSuperview()
+            maker.centerY.equalToSuperview()
+        }
+    }
+    
+    private func createDoneAnimationView() {
+        loadingView.addSubview(doneAnimationView)
+        doneAnimationView.animation = Animation.named("done-animation")
+        doneAnimationView.contentMode = .scaleAspectFit
+        doneAnimationView.isHidden = true
+        
+        
+        doneAnimationView.snp.makeConstraints { maker in
+            maker.height.equalTo(UIScreen.main.bounds.height * 0.2)
+            maker.width.equalTo(UIScreen.main.bounds.height * 0.2)
+            maker.centerX.equalToSuperview()
+            maker.centerY.equalToSuperview()
+        }
+    }
+    
     
 }
